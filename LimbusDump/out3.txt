@@ -1,0 +1,4336 @@
+class ReqPacket_EnterHellsChickenDungeonCommand {
+	dungeonid?: number;
+	static fromJSON(json:any){
+		let obj = new ReqPacket_EnterHellsChickenDungeonCommand()
+		obj.dungeonid = json.dungeonid
+		return obj
+	}
+
+}
+
+class ReqPacket_ReEnterHellsChickenDungeonCommand {
+	dungeonid?: number;
+	static fromJSON(json:any){
+		let obj = new ReqPacket_ReEnterHellsChickenDungeonCommand()
+		obj.dungeonid = json.dungeonid
+		return obj
+	}
+
+}
+
+class ReqPacket_ExitHellsChickenDungeonCommand {
+	mainchapterid?: number;
+	subchapterid?: number;
+	nodeid?: number;
+	isClear?: number;
+	static fromJSON(json:any){
+		let obj = new ReqPacket_ExitHellsChickenDungeonCommand()
+		obj.mainchapterid = json.mainchapterid
+		obj.subchapterid = json.subchapterid
+		obj.nodeid = json.nodeid
+		obj.isClear = json.isClear
+		return obj
+	}
+
+}
+
+class ResPacket_NULL {
+	static fromJSON(json:any){
+		let obj = new ResPacket_NULL()
+		return obj
+	}
+
+}
+
+class ReqPacket_AcquireEgoGiftEventHellsChickenDungeonCommand {
+	selectIndexList?: number[];
+	static fromJSON(json:any){
+		let obj = new ReqPacket_AcquireEgoGiftEventHellsChickenDungeonCommand()
+		obj.selectIndexList = json.selectIndexList
+		return obj
+	}
+
+}
+
+class ReqPacket_NULL {
+	static fromJSON(json:any){
+		let obj = new ReqPacket_NULL()
+		return obj
+	}
+
+}
+
+class ResPacket_GetHellsChickenState {
+	dollsNum?: number;
+	rewardState?: number[];
+	static fromJSON(json:any){
+		let obj = new ResPacket_GetHellsChickenState()
+		obj.dollsNum = json.dollsNum
+		obj.rewardState = json.rewardState
+		return obj
+	}
+
+}
+
+class ReqPacket_AcquireHellsChickenReward {
+	rewardId?: number;
+	static fromJSON(json:any){
+		let obj = new ReqPacket_AcquireHellsChickenReward()
+		obj.rewardId = json.rewardId
+		return obj
+	}
+
+}
+
+class ReqPacket_SetTimeMinuteOffset {
+	password?: string;
+	timeMinuteOffset?: number;
+	static fromJSON(json:any){
+		let obj = new ReqPacket_SetTimeMinuteOffset()
+		obj.password = json.password
+		obj.timeMinuteOffset = json.timeMinuteOffset
+		return obj
+	}
+
+}
+
+class ResPacket_SetTimeMinuteOffset {
+	serverTime?: string;
+	static fromJSON(json:any){
+		let obj = new ResPacket_SetTimeMinuteOffset()
+		obj.serverTime = json.serverTime
+		return obj
+	}
+
+}
+
+class ReqPacket_ChangeCurrentAnnouncer {
+	announcerIds?: number[];
+	static fromJSON(json:any){
+		let obj = new ReqPacket_ChangeCurrentAnnouncer()
+		obj.announcerIds = json.announcerIds
+		return obj
+	}
+
+}
+
+class ResPacket_GetAttendanceState {
+	rewardState?: number[];
+	consumption?: number;
+	static fromJSON(json:any){
+		let obj = new ResPacket_GetAttendanceState()
+		obj.rewardState = json.rewardState
+		obj.consumption = json.consumption
+		return obj
+	}
+
+}
+
+class ReqPacket_AcquireAttendanceReward {
+	partid?: number;
+	id?: number;
+	static fromJSON(json:any){
+		let obj = new ReqPacket_AcquireAttendanceReward()
+		obj.partid = json.partid
+		obj.id = json.id
+		return obj
+	}
+
+}
+
+class ReqPacket_BattlePassMissionReward {
+	missionType?: number;
+	missionId?: number;
+	static fromJSON(json:any){
+		let obj = new ReqPacket_BattlePassMissionReward()
+		obj.missionType = json.missionType
+		obj.missionId = json.missionId
+		return obj
+	}
+
+}
+
+class ReqPacket_BattlePassReward {
+	level?: number;
+	static fromJSON(json:any){
+		let obj = new ReqPacket_BattlePassReward()
+		obj.level = json.level
+		return obj
+	}
+
+}
+
+class ReqPacket_PurchaseBattlePassLevel {
+	level?: number;
+	static fromJSON(json:any){
+		let obj = new ReqPacket_PurchaseBattlePassLevel()
+		obj.level = json.level
+		return obj
+	}
+
+}
+
+class ReqPacket_EnterExpDungeon {
+	dungeonid?: number;
+	static fromJSON(json:any){
+		let obj = new ReqPacket_EnterExpDungeon()
+		obj.dungeonid = json.dungeonid
+		return obj
+	}
+
+}
+
+class ResPacket_EnterExpDungeon {
+	isclear?: number;
+	static fromJSON(json:any){
+		let obj = new ResPacket_EnterExpDungeon()
+		obj.isclear = json.isclear
+		return obj
+	}
+
+}
+
+class ReqPacket_SkipExpDungeon {
+	dungeonid?: number;
+	static fromJSON(json:any){
+		let obj = new ReqPacket_SkipExpDungeon()
+		obj.dungeonid = json.dungeonid
+		return obj
+	}
+
+}
+
+class ReqPacket_EnterThreadDungeon {
+	dungeonid?: number;
+	level?: number;
+	abnormalityids?: number[];
+	static fromJSON(json:any){
+		let obj = new ReqPacket_EnterThreadDungeon()
+		obj.dungeonid = json.dungeonid
+		obj.level = json.level
+		obj.abnormalityids = json.abnormalityids
+		return obj
+	}
+
+}
+
+class ReqPacket_SkipThreadDungeon {
+	dungeonid?: number;
+	dungeonlevel?: number;
+	static fromJSON(json:any){
+		let obj = new ReqPacket_SkipThreadDungeon()
+		obj.dungeonid = json.dungeonid
+		obj.dungeonlevel = json.dungeonlevel
+		return obj
+	}
+
+}
+
+class ReqPacket_AcquireDailyLoginReward {
+	weekid?: number;
+	id?: number;
+	static fromJSON(json:any){
+		let obj = new ReqPacket_AcquireDailyLoginReward()
+		obj.weekid = json.weekid
+		obj.id = json.id
+		return obj
+	}
+
+}
+
+class ResPacket_GetDanteNoteState {
+	page?: number;
+	todayPage?: number;
+	static fromJSON(json:any){
+		let obj = new ResPacket_GetDanteNoteState()
+		obj.page = json.page
+		obj.todayPage = json.todayPage
+		return obj
+	}
+
+}
+
+class ReqPacket_GetStageProgressRateRewardCommand {
+	mainchapterid?: number;
+	subchapterid?: number;
+	rewardType?: number;
+	static fromJSON(json:any){
+		let obj = new ReqPacket_GetStageProgressRateRewardCommand()
+		obj.mainchapterid = json.mainchapterid
+		obj.subchapterid = json.subchapterid
+		obj.rewardType = json.rewardType
+		return obj
+	}
+
+}
+
+class ReqPacket_EnterStageBattleCommand {
+	mainchapterid?: number;
+	subchapterid?: number;
+	nodeid?: number;
+	stageid?: number;
+	abnormalityids?: number[];
+	static fromJSON(json:any){
+		let obj = new ReqPacket_EnterStageBattleCommand()
+		obj.mainchapterid = json.mainchapterid
+		obj.subchapterid = json.subchapterid
+		obj.nodeid = json.nodeid
+		obj.stageid = json.stageid
+		obj.abnormalityids = json.abnormalityids
+		return obj
+	}
+
+}
+
+class ReqPacket_GetDungeonSaveInfoAll {
+	railwayDungeonId?: number;
+	static fromJSON(json:any){
+		let obj = new ReqPacket_GetDungeonSaveInfoAll()
+		obj.railwayDungeonId = json.railwayDungeonId
+		return obj
+	}
+
+}
+
+class ReqPacket_ReEnterStoryDungeonCommand {
+	stageid?: number;
+	static fromJSON(json:any){
+		let obj = new ReqPacket_ReEnterStoryDungeonCommand()
+		obj.stageid = json.stageid
+		return obj
+	}
+
+}
+
+class ReqPacket_ExitStoryDungeonCommand {
+	mainchapterid?: number;
+	subchapterid?: number;
+	nodeid?: number;
+	stageid?: number;
+	static fromJSON(json:any){
+		let obj = new ReqPacket_ExitStoryDungeonCommand()
+		obj.mainchapterid = json.mainchapterid
+		obj.subchapterid = json.subchapterid
+		obj.nodeid = json.nodeid
+		obj.stageid = json.stageid
+		return obj
+	}
+
+}
+
+class ReqPacket_EnterStoryDungeonMapNodeCommand {
+	floornumber?: number;
+	sectornumber?: number;
+	nodeid?: number;
+	abnormalityids?: number[];
+	participatedPIds?: number[];
+	static fromJSON(json:any){
+		let obj = new ReqPacket_EnterStoryDungeonMapNodeCommand()
+		obj.floornumber = json.floornumber
+		obj.sectornumber = json.sectornumber
+		obj.nodeid = json.nodeid
+		obj.abnormalityids = json.abnormalityids
+		obj.participatedPIds = json.participatedPIds
+		return obj
+	}
+
+}
+
+class ReqPacket_ExitStoryCommand {
+	mainchapterid?: number;
+	subchapterid?: number;
+	nodeid?: number;
+	stageid?: number;
+	static fromJSON(json:any){
+		let obj = new ReqPacket_ExitStoryCommand()
+		obj.mainchapterid = json.mainchapterid
+		obj.subchapterid = json.subchapterid
+		obj.nodeid = json.nodeid
+		obj.stageid = json.stageid
+		return obj
+	}
+
+}
+
+class ReqPacket_GetAbnormalityLogData {
+	abnormalityIds?: number[];
+	static fromJSON(json:any){
+		let obj = new ReqPacket_GetAbnormalityLogData()
+		obj.abnormalityIds = json.abnormalityIds
+		return obj
+	}
+
+}
+
+class ReqPacket_GetStoryDungeonNodeRecord {
+	dungeonid?: number;
+	static fromJSON(json:any){
+		let obj = new ReqPacket_GetStoryDungeonNodeRecord()
+		obj.dungeonid = json.dungeonid
+		return obj
+	}
+
+}
+
+class ResPacket_GetStoryDungeonNodeRecord {
+	nodes?: number[];
+	Nodes?: number[];
+	static fromJSON(json:any){
+		let obj = new ResPacket_GetStoryDungeonNodeRecord()
+		obj.nodes = json.nodes
+		obj.Nodes = json.Nodes
+		return obj
+	}
+
+}
+
+class ReqPacket_PlayGacha {
+	gachaId?: number;
+	paymentId?: number;
+	static fromJSON(json:any){
+		let obj = new ReqPacket_PlayGacha()
+		obj.gachaId = json.gachaId
+		obj.paymentId = json.paymentId
+		return obj
+	}
+
+}
+
+class ReqPacket_UseGachaPityPoint {
+	gachaId?: number;
+	targetIdx?: number;
+	static fromJSON(json:any){
+		let obj = new ReqPacket_UseGachaPityPoint()
+		obj.gachaId = json.gachaId
+		obj.targetIdx = json.targetIdx
+		return obj
+	}
+
+}
+
+class ReqPacket_Purchase {
+	productId?: string;
+	receipt?: string;
+	platform?: number;
+	static fromJSON(json:any){
+		let obj = new ReqPacket_Purchase()
+		obj.productId = json.productId
+		obj.receipt = json.receipt
+		obj.platform = json.platform
+		return obj
+	}
+
+}
+
+class ReqPacket_PurchaseAsGoogle {
+	productId?: string;
+	receipt?: string;
+	static fromJSON(json:any){
+		let obj = new ReqPacket_PurchaseAsGoogle()
+		obj.productId = json.productId
+		obj.receipt = json.receipt
+		return obj
+	}
+
+}
+
+class ReqPacket_PurchaseAsApple {
+	productId?: string;
+	receipt?: string;
+	static fromJSON(json:any){
+		let obj = new ReqPacket_PurchaseAsApple()
+		obj.productId = json.productId
+		obj.receipt = json.receipt
+		return obj
+	}
+
+}
+
+class ReqPacket_InitPurchaseAsSteam {
+	productId?: string;
+	steamId?: string;
+	language?: string;
+	productDesc?: string;
+	static fromJSON(json:any){
+		let obj = new ReqPacket_InitPurchaseAsSteam()
+		obj.productId = json.productId
+		obj.steamId = json.steamId
+		obj.language = json.language
+		obj.productDesc = json.productDesc
+		return obj
+	}
+
+}
+
+class ReqPacket_FinalizePurchaseAsSteam {
+	orderId?: string;
+	static fromJSON(json:any){
+		let obj = new ReqPacket_FinalizePurchaseAsSteam()
+		obj.orderId = json.orderId
+		return obj
+	}
+
+}
+
+class ReqPacket_InitPurchase {
+	productId?: string;
+	static fromJSON(json:any){
+		let obj = new ReqPacket_InitPurchase()
+		obj.productId = json.productId
+		return obj
+	}
+
+}
+
+class ResPacket_InitPurchase {
+	resultState?: string;
+	IsPurchasable?: boolean;
+	static fromJSON(json:any){
+		let obj = new ResPacket_InitPurchase()
+		obj.resultState = json.resultState
+		obj.IsPurchasable = json.IsPurchasable
+		return obj
+	}
+
+}
+
+class ReqPacket_PurchaseEnkephalinModule {
+	num?: number;
+	static fromJSON(json:any){
+		let obj = new ReqPacket_PurchaseEnkephalinModule()
+		obj.num = json.num
+		return obj
+	}
+
+}
+
+class ReqPacket_PurchaseEnkephalin {
+	num?: number;
+	static fromJSON(json:any){
+		let obj = new ReqPacket_PurchaseEnkephalin()
+		obj.num = json.num
+		return obj
+	}
+
+}
+
+class ReqPacket_PersonalityGacksung {
+	personalityId?: number;
+	static fromJSON(json:any){
+		let obj = new ReqPacket_PersonalityGacksung()
+		obj.personalityId = json.personalityId
+		return obj
+	}
+
+}
+
+class ReqPacket_SetPersonalityGacksungIllust {
+	personalityId?: number;
+	type?: number;
+	static fromJSON(json:any){
+		let obj = new ReqPacket_SetPersonalityGacksungIllust()
+		obj.personalityId = json.personalityId
+		obj.type = json.type
+		return obj
+	}
+
+}
+
+class ReqPacket_EgoGacksung {
+	egoId?: number;
+	static fromJSON(json:any){
+		let obj = new ReqPacket_EgoGacksung()
+		obj.egoId = json.egoId
+		return obj
+	}
+
+}
+
+class ReqPacket_LoadUserDataAll {
+	static fromJSON(json:any){
+		let obj = new ReqPacket_LoadUserDataAll()
+		return obj
+	}
+
+}
+
+class ReqPacket_SignInAsGuest {
+	guestId?: number;
+	authToken?: string;
+	version?: string;
+	deviceModel?: string;
+	static fromJSON(json:any){
+		let obj = new ReqPacket_SignInAsGuest()
+		obj.guestId = json.guestId
+		obj.authToken = json.authToken
+		obj.version = json.version
+		obj.deviceModel = json.deviceModel
+		return obj
+	}
+
+}
+
+class ReqPacket_SignInAsNewGuest {
+	deviceModel?: string;
+	static fromJSON(json:any){
+		let obj = new ReqPacket_SignInAsNewGuest()
+		obj.deviceModel = json.deviceModel
+		return obj
+	}
+
+}
+
+class ReqPacket_SignInAsGoogle {
+	googleToken?: string;
+	version?: string;
+	deviceModel?: string;
+	static fromJSON(json:any){
+		let obj = new ReqPacket_SignInAsGoogle()
+		obj.googleToken = json.googleToken
+		obj.version = json.version
+		obj.deviceModel = json.deviceModel
+		return obj
+	}
+
+}
+
+class ReqPacket_LinkWithGoogle {
+	googleToken?: string;
+	version?: string;
+	static fromJSON(json:any){
+		let obj = new ReqPacket_LinkWithGoogle()
+		obj.googleToken = json.googleToken
+		obj.version = json.version
+		return obj
+	}
+
+}
+
+class ReqPacket_SignInAsApple {
+	appleToken?: string;
+	version?: string;
+	deviceModel?: string;
+	static fromJSON(json:any){
+		let obj = new ReqPacket_SignInAsApple()
+		obj.appleToken = json.appleToken
+		obj.version = json.version
+		obj.deviceModel = json.deviceModel
+		return obj
+	}
+
+}
+
+class ReqPacket_LinkWithApple {
+	appleToken?: string;
+	version?: string;
+	static fromJSON(json:any){
+		let obj = new ReqPacket_LinkWithApple()
+		obj.appleToken = json.appleToken
+		obj.version = json.version
+		return obj
+	}
+
+}
+
+class ReqPacket_SignInAsSteam {
+	steamToken?: string;
+	version?: string;
+	deviceModel?: string;
+	static fromJSON(json:any){
+		let obj = new ReqPacket_SignInAsSteam()
+		obj.steamToken = json.steamToken
+		obj.version = json.version
+		obj.deviceModel = json.deviceModel
+		return obj
+	}
+
+}
+
+class ReqPacket_RefreshLinkAuth {
+	details?: string;
+	static fromJSON(json:any){
+		let obj = new ReqPacket_RefreshLinkAuth()
+		obj.details = json.details
+		return obj
+	}
+
+}
+
+class ReqPacket_GetInfoOfLinkWith {
+	targetPublicId?: string;
+	password?: string;
+	static fromJSON(json:any){
+		let obj = new ReqPacket_GetInfoOfLinkWith()
+		obj.targetPublicId = json.targetPublicId
+		obj.password = json.password
+		return obj
+	}
+
+}
+
+class ResPacket_GetInfoOfLinkWith {
+	details?: string;
+	state?: string;
+	static fromJSON(json:any){
+		let obj = new ResPacket_GetInfoOfLinkWith()
+		obj.details = json.details
+		obj.state = json.state
+		return obj
+	}
+
+}
+
+class ReqPacket_LinkWithAnother {
+	targetPublicId?: string;
+	password?: string;
+	mainIsTarget?: boolean;
+	static fromJSON(json:any){
+		let obj = new ReqPacket_LinkWithAnother()
+		obj.targetPublicId = json.targetPublicId
+		obj.password = json.password
+		obj.mainIsTarget = json.mainIsTarget
+		return obj
+	}
+
+}
+
+class ResPacket_LinkWithAnother {
+	state?: string;
+	static fromJSON(json:any){
+		let obj = new ResPacket_LinkWithAnother()
+		obj.state = json.state
+		return obj
+	}
+
+}
+
+class ReqPacket_UnsealMails {
+	mailIds?: number[];
+	static fromJSON(json:any){
+		let obj = new ReqPacket_UnsealMails()
+		obj.mailIds = json.mailIds
+		return obj
+	}
+
+}
+
+class ReqPacket_SaveMiniStoryWeek {
+	weekId?: number;
+	static fromJSON(json:any){
+		let obj = new ReqPacket_SaveMiniStoryWeek()
+		obj.weekId = json.weekId
+		return obj
+	}
+
+}
+
+class ReqPacket_MirrorDungeonCommon {
+	isOrigin?: number;
+	static fromJSON(json:any){
+		let obj = new ReqPacket_MirrorDungeonCommon()
+		obj.isOrigin = json.isOrigin
+		return obj
+	}
+
+}
+
+class ReqPacket_EnterMirrorDungeonCommand {
+	dungeonid?: number;
+	idx?: number;
+	static fromJSON(json:any){
+		let obj = new ReqPacket_EnterMirrorDungeonCommand()
+		obj.dungeonid = json.dungeonid
+		obj.idx = json.idx
+		return obj
+	}
+
+}
+
+class ReqPacket_ReEnterMirrorDungeonCommand {
+	dungeonid?: number;
+	idx?: number;
+	static fromJSON(json:any){
+		let obj = new ReqPacket_ReEnterMirrorDungeonCommand()
+		obj.dungeonid = json.dungeonid
+		obj.idx = json.idx
+		return obj
+	}
+
+}
+
+class ReqPacket_GetMirrorDungeonLastReward {
+	useEnkephalinModule?: number;
+	usehardbonus?: number;
+	useweeklybonus?: number;
+	static fromJSON(json:any){
+		let obj = new ReqPacket_GetMirrorDungeonLastReward()
+		obj.useEnkephalinModule = json.useEnkephalinModule
+		obj.usehardbonus = json.usehardbonus
+		obj.useweeklybonus = json.useweeklybonus
+		return obj
+	}
+
+}
+
+class ReqPacket_AcquireEgoGiftEventMirrorDungeonCommand {
+	selectIndexList?: number[];
+	static fromJSON(json:any){
+		let obj = new ReqPacket_AcquireEgoGiftEventMirrorDungeonCommand()
+		obj.selectIndexList = json.selectIndexList
+		return obj
+	}
+
+}
+
+class ReqPacket_GetMirrorDungeonEgoGiftRecordCommand {
+	dungeonId?: number;
+	static fromJSON(json:any){
+		let obj = new ReqPacket_GetMirrorDungeonEgoGiftRecordCommand()
+		obj.dungeonId = json.dungeonId
+		return obj
+	}
+
+}
+
+class ResPacket_GetMirrorDungeonEgoGiftRecordCommand {
+	dungeonId?: number;
+	acquiredegogifts?: number[];
+	static fromJSON(json:any){
+		let obj = new ResPacket_GetMirrorDungeonEgoGiftRecordCommand()
+		obj.dungeonId = json.dungeonId
+		obj.acquiredegogifts = json.acquiredegogifts
+		return obj
+	}
+
+}
+
+class ReqPacket_UnLockMirrorDungeonEgoGiftCommand {
+	egogiftIds?: number[];
+	static fromJSON(json:any){
+		let obj = new ReqPacket_UnLockMirrorDungeonEgoGiftCommand()
+		obj.egogiftIds = json.egogiftIds
+		return obj
+	}
+
+}
+
+class ReqPacket_SendMirrorDungeonLogErrorCommand {
+	type?: number;
+	static fromJSON(json:any){
+		let obj = new ReqPacket_SendMirrorDungeonLogErrorCommand()
+		obj.type = json.type
+		return obj
+	}
+
+}
+
+class ReqPacket_PurchaseMirrordungeonHeal {
+	idx?: number;
+	pid?: number;
+	static fromJSON(json:any){
+		let obj = new ReqPacket_PurchaseMirrordungeonHeal()
+		obj.idx = json.idx
+		obj.pid = json.pid
+		return obj
+	}
+
+}
+
+class ReqPacket_PurchaseUpgradePersonality {
+	idx?: number;
+	static fromJSON(json:any){
+		let obj = new ReqPacket_PurchaseUpgradePersonality()
+		obj.idx = json.idx
+		return obj
+	}
+
+}
+
+class ReqPacket_PurchaseEgoGift {
+	idx?: number;
+	static fromJSON(json:any){
+		let obj = new ReqPacket_PurchaseEgoGift()
+		obj.idx = json.idx
+		return obj
+	}
+
+}
+
+class ReqPacket_GetStartBuffFInfo {
+	dungeonid?: number;
+	static fromJSON(json:any){
+		let obj = new ReqPacket_GetStartBuffFInfo()
+		obj.dungeonid = json.dungeonid
+		return obj
+	}
+
+}
+
+class ReqPacket_PurchaseStartBuff {
+	dungeonid?: number;
+	buffid?: number;
+	static fromJSON(json:any){
+		let obj = new ReqPacket_PurchaseStartBuff()
+		obj.dungeonid = json.dungeonid
+		obj.buffid = json.buffid
+		return obj
+	}
+
+}
+
+class ReqPacket_RemoveMirrorDungeonEgoGift {
+	egogiftId?: number;
+	static fromJSON(json:any){
+		let obj = new ReqPacket_RemoveMirrorDungeonEgoGift()
+		obj.egogiftId = json.egogiftId
+		return obj
+	}
+
+}
+
+class ReqPacket_GetMirrorDungeonPreset {
+	dungeonid?: number;
+	idx?: number;
+	static fromJSON(json:any){
+		let obj = new ReqPacket_GetMirrorDungeonPreset()
+		obj.dungeonid = json.dungeonid
+		obj.idx = json.idx
+		return obj
+	}
+
+}
+
+class ResPacket_GetMirrorDungeonRewardChip {
+	chip?: number;
+	Chip?: number;
+	static fromJSON(json:any){
+		let obj = new ResPacket_GetMirrorDungeonRewardChip()
+		obj.chip = json.chip
+		obj.Chip = json.Chip
+		return obj
+	}
+
+}
+
+class ReqPacket_SelectMirrorDungeonRandomPickFormation {
+	dungeonid?: number;
+	idx?: number;
+	static fromJSON(json:any){
+		let obj = new ReqPacket_SelectMirrorDungeonRandomPickFormation()
+		obj.dungeonid = json.dungeonid
+		obj.idx = json.idx
+		return obj
+	}
+
+}
+
+class ReqPacket_ReportError {
+	errorCode?: string;
+	url?: string;
+	requestJson?: string;
+	message?: string;
+	static fromJSON(json:any){
+		let obj = new ReqPacket_ReportError()
+		obj.errorCode = json.errorCode
+		obj.url = json.url
+		obj.requestJson = json.requestJson
+		obj.message = json.message
+		return obj
+	}
+
+}
+
+class ReqPacket_CompleteTheaterStory {
+	storyId?: string;
+	static fromJSON(json:any){
+		let obj = new ReqPacket_CompleteTheaterStory()
+		obj.storyId = json.storyId
+		return obj
+	}
+
+}
+
+class ReqPacket_FindFriend {
+	publicUID?: string;
+	static fromJSON(json:any){
+		let obj = new ReqPacket_FindFriend()
+		obj.publicUID = json.publicUID
+		return obj
+	}
+
+}
+
+class ReqPacket_SendFriendRequest {
+	receiverPublicUID?: string;
+	static fromJSON(json:any){
+		let obj = new ReqPacket_SendFriendRequest()
+		obj.receiverPublicUID = json.receiverPublicUID
+		return obj
+	}
+
+}
+
+class ReqPacket_AcceptReceivedFriendRequest {
+	senderPublicUID?: string;
+	static fromJSON(json:any){
+		let obj = new ReqPacket_AcceptReceivedFriendRequest()
+		obj.senderPublicUID = json.senderPublicUID
+		return obj
+	}
+
+}
+
+class ResPacket_AcceptReceivedFriendRequest {
+	success?: number;
+	static fromJSON(json:any){
+		let obj = new ResPacket_AcceptReceivedFriendRequest()
+		obj.success = json.success
+		return obj
+	}
+
+}
+
+class ReqPacket_RejectReceivedFriendRequest {
+	senderPublicUID?: string;
+	static fromJSON(json:any){
+		let obj = new ReqPacket_RejectReceivedFriendRequest()
+		obj.senderPublicUID = json.senderPublicUID
+		return obj
+	}
+
+}
+
+class ReqPacket_CancelSentFriendRequest {
+	receivedPublicUID?: string;
+	static fromJSON(json:any){
+		let obj = new ReqPacket_CancelSentFriendRequest()
+		obj.receivedPublicUID = json.receivedPublicUID
+		return obj
+	}
+
+}
+
+class ReqPacket_DeleteFriend {
+	deletedPublicUID?: string;
+	static fromJSON(json:any){
+		let obj = new ReqPacket_DeleteFriend()
+		obj.deletedPublicUID = json.deletedPublicUID
+		return obj
+	}
+
+}
+
+class ReqPacket_GetFriendSupportPersonalities {
+	publicUID?: string;
+	static fromJSON(json:any){
+		let obj = new ReqPacket_GetFriendSupportPersonalities()
+		obj.publicUID = json.publicUID
+		return obj
+	}
+
+}
+
+class ReqPacket_GetFriendSupportPersonalitiesByCharacterId {
+	characterid?: number;
+	static fromJSON(json:any){
+		let obj = new ReqPacket_GetFriendSupportPersonalitiesByCharacterId()
+		obj.characterid = json.characterid
+		return obj
+	}
+
+}
+
+class ReqPacket_UpdateProfileTicketDeco {
+	leftBorderId?: number;
+	rightBorderId?: number;
+	egoBackgroundId?: number;
+	static fromJSON(json:any){
+		let obj = new ReqPacket_UpdateProfileTicketDeco()
+		obj.leftBorderId = json.leftBorderId
+		obj.rightBorderId = json.rightBorderId
+		obj.egoBackgroundId = json.egoBackgroundId
+		return obj
+	}
+
+}
+
+class ResPacket_UpdateProfileTicketDeco {
+	leftBorderId?: number;
+	rightBorderId?: number;
+	egoBackgroundId?: number;
+	static fromJSON(json:any){
+		let obj = new ResPacket_UpdateProfileTicketDeco()
+		obj.leftBorderId = json.leftBorderId
+		obj.rightBorderId = json.rightBorderId
+		obj.egoBackgroundId = json.egoBackgroundId
+		return obj
+	}
+
+}
+
+class ReqPacket_PlayVendingMachine {
+	vendingMachineId?: number;
+	targetType?: string;
+	targetId?: number;
+	coupons?: number[];
+	static fromJSON(json:any){
+		let obj = new ReqPacket_PlayVendingMachine()
+		obj.vendingMachineId = json.vendingMachineId
+		obj.targetType = json.targetType
+		obj.targetId = json.targetId
+		obj.coupons = json.coupons
+		return obj
+	}
+
+}
+
+class ReqPacket_EnterRailwayDungeonMapNodeCommand {
+	dungeonId?: number;
+	nodeid?: number;
+	abnormalityids?: number[];
+	participatedPIds?: number[];
+	static fromJSON(json:any){
+		let obj = new ReqPacket_EnterRailwayDungeonMapNodeCommand()
+		obj.dungeonId = json.dungeonId
+		obj.nodeid = json.nodeid
+		obj.abnormalityids = json.abnormalityids
+		obj.participatedPIds = json.participatedPIds
+		return obj
+	}
+
+}
+
+class ReqPacket_GetRailwayDungeonNodeAndLogAllCommand {
+	dungeonId?: number;
+	static fromJSON(json:any){
+		let obj = new ReqPacket_GetRailwayDungeonNodeAndLogAllCommand()
+		obj.dungeonId = json.dungeonId
+		return obj
+	}
+
+}
+
+class ReqPacket_ExitRailwayDungeonCommand {
+	dungeonId?: number;
+	isClear?: boolean;
+	static fromJSON(json:any){
+		let obj = new ReqPacket_ExitRailwayDungeonCommand()
+		obj.dungeonId = json.dungeonId
+		obj.isClear = json.isClear
+		return obj
+	}
+
+}
+
+class ReqPacket_AcquireRailwayDungeonReward {
+	dungeonId?: number;
+	static fromJSON(json:any){
+		let obj = new ReqPacket_AcquireRailwayDungeonReward()
+		obj.dungeonId = json.dungeonId
+		return obj
+	}
+
+}
+
+class HellsChickenDungeonGetCharacterInfoContainGacksungFormat {
+	g?: number;
+	cl?: number;
+	static fromJSON(json:any){
+		let obj = new HellsChickenDungeonGetCharacterInfoContainGacksungFormat()
+		obj.g = json.g
+		obj.cl = json.cl
+		return obj
+	}
+
+}
+
+class DungeonStatisticsDataFormat {
+	id?: number;
+	gd?: number;
+	rd?: number;
+	static fromJSON(json:any){
+		let obj = new DungeonStatisticsDataFormat()
+		obj.id = json.id
+		obj.gd = json.gd
+		obj.rd = json.rd
+		return obj
+	}
+
+}
+
+class StagePersonalityInfoFormat {
+	personalityid?: number;
+	prevlevel?: number;
+	totaladdexp?: number;
+	static fromJSON(json:any){
+		let obj = new StagePersonalityInfoFormat()
+		obj.personalityid = json.personalityid
+		obj.prevlevel = json.prevlevel
+		obj.totaladdexp = json.totaladdexp
+		return obj
+	}
+
+}
+
+class DungeonMapNodeFormat {
+	f?: number;
+	s?: number;
+	nid?: number;
+	static fromJSON(json:any){
+		let obj = new DungeonMapNodeFormat()
+		obj.f = json.f
+		obj.s = json.s
+		obj.nid = json.nid
+		return obj
+	}
+
+}
+
+class ReqPacket_EnterHellsChickenDungeonMapNodeCommand {
+	currentnode?: DungeonMapNodeFormat;
+	abnormalityids?: number[];
+	participatedPIds?: number[];
+	static fromJSON(json:any){
+		let obj = new ReqPacket_EnterHellsChickenDungeonMapNodeCommand()
+		obj.currentnode = DungeonMapNodeFormat.fromJSON(json.currentnode)
+		obj.abnormalityids = json.abnormalityids
+		obj.participatedPIds = json.participatedPIds
+		return obj
+	}
+
+}
+
+class DungeonChoiceEventSaveDataFormat {
+	sl?: number[];
+	cs?: number;
+	ri?: number;
+	static fromJSON(json:any){
+		let obj = new DungeonChoiceEventSaveDataFormat()
+		obj.sl = json.sl
+		obj.cs = json.cs
+		obj.ri = json.ri
+		return obj
+	}
+
+}
+
+class HellsChickenDungeonSaveUnitInfoFormat {
+	grade?: number;
+	static fromJSON(json:any){
+		let obj = new HellsChickenDungeonSaveUnitInfoFormat()
+		obj.grade = json.grade
+		return obj
+	}
+
+}
+
+class DungeonMapEgoGiftFormat {
+	id?: number;
+	pids?: number[];
+	un?: number;
+	static fromJSON(json:any){
+		let obj = new DungeonMapEgoGiftFormat()
+		obj.id = json.id
+		obj.pids = json.pids
+		obj.un = json.un
+		return obj
+	}
+
+}
+
+class ReqPacket_EnterHellsChickendungeonMapNodeBattleAfterChoice {
+	participatedPids?: number[];
+	abnormalityids?: number[];
+	dungeonUnitList?: HellsChickenDungeonSaveUnitInfoFormat[];
+	static fromJSON(json:any){
+		let obj = new ReqPacket_EnterHellsChickendungeonMapNodeBattleAfterChoice()
+		obj.participatedPids = json.participatedPids
+		obj.abnormalityids = json.abnormalityids
+		obj.dungeonUnitList = Object.values(json.dungeonUnitList).map(x=> HellsChickenDungeonSaveUnitInfoFormat.fromJSON(x))
+		return obj
+	}
+
+}
+
+class BattlePassParameterFormat {
+	enemyKillCount?: number;
+	abnormalityKillCount?: number;
+	isUsedDailyChar?: boolean;
+	isUsedSeasonEgo?: boolean;
+	isUsedSeasonAnnouncer?: boolean;
+	static fromJSON(json:any){
+		let obj = new BattlePassParameterFormat()
+		obj.enemyKillCount = json.enemyKillCount
+		obj.abnormalityKillCount = json.abnormalityKillCount
+		obj.isUsedDailyChar = json.isUsedDailyChar
+		obj.isUsedSeasonEgo = json.isUsedSeasonEgo
+		obj.isUsedSeasonAnnouncer = json.isUsedSeasonAnnouncer
+		return obj
+	}
+
+}
+
+class DungeonEgoSkillStockFormat {
+	t?: string;
+	n?: number;
+	static fromJSON(json:any){
+		let obj = new DungeonEgoSkillStockFormat()
+		obj.t = json.t
+		obj.n = json.n
+		return obj
+	}
+
+}
+
+class ReqPacket_UpdateHellsChickendungeonUnits {
+	dungeonunitlist?: HellsChickenDungeonSaveUnitInfoFormat[];
+	static fromJSON(json:any){
+		let obj = new ReqPacket_UpdateHellsChickendungeonUnits()
+		obj.dungeonunitlist = Object.values(json.dungeonunitlist).map(x=> HellsChickenDungeonSaveUnitInfoFormat.fromJSON(x))
+		return obj
+	}
+
+}
+
+class RandomDungeonEncounterRewardEventInfoFormat {
+	rt?: string;
+	se?: number;
+	sh?: number;
+	pool?: number[];
+	static fromJSON(json:any){
+		let obj = new RandomDungeonEncounterRewardEventInfoFormat()
+		obj.rt = json.rt
+		obj.se = json.se
+		obj.sh = json.sh
+		obj.pool = json.pool
+		return obj
+	}
+
+}
+
+class ResPacket_AcquireCharacterEventDataHellsChickenDungeonCommand {
+	dungeonUnitList?: HellsChickenDungeonSaveUnitInfoFormat[];
+	remainRewardEvent?: RandomDungeonEncounterRewardEventInfoFormat[];
+	DungeonUnitList?: HellsChickenDungeonSaveUnitInfoFormat[];
+	RemainRewardEvent?: RandomDungeonEncounterRewardEventInfoFormat[];
+	static fromJSON(json:any){
+		let obj = new ResPacket_AcquireCharacterEventDataHellsChickenDungeonCommand()
+		obj.dungeonUnitList = Object.values(json.dungeonUnitList).map(x=> HellsChickenDungeonSaveUnitInfoFormat.fromJSON(x))
+		obj.remainRewardEvent = Object.values(json.remainRewardEvent).map(x=> RandomDungeonEncounterRewardEventInfoFormat.fromJSON(x))
+		obj.DungeonUnitList = Object.values(json.DungeonUnitList).map(x=> HellsChickenDungeonSaveUnitInfoFormat.fromJSON(x))
+		obj.RemainRewardEvent = Object.values(json.RemainRewardEvent).map(x=> RandomDungeonEncounterRewardEventInfoFormat.fromJSON(x))
+		return obj
+	}
+
+}
+
+class ResPacket_PersonalityLevelUpEventHellsChickenDungeonCommand {
+	dungeonUnitList?: HellsChickenDungeonSaveUnitInfoFormat[];
+	remainRewardEvent?: RandomDungeonEncounterRewardEventInfoFormat[];
+	DungeonUnitList?: HellsChickenDungeonSaveUnitInfoFormat[];
+	RemainRewardEvent?: RandomDungeonEncounterRewardEventInfoFormat[];
+	static fromJSON(json:any){
+		let obj = new ResPacket_PersonalityLevelUpEventHellsChickenDungeonCommand()
+		obj.dungeonUnitList = Object.values(json.dungeonUnitList).map(x=> HellsChickenDungeonSaveUnitInfoFormat.fromJSON(x))
+		obj.remainRewardEvent = Object.values(json.remainRewardEvent).map(x=> RandomDungeonEncounterRewardEventInfoFormat.fromJSON(x))
+		obj.DungeonUnitList = Object.values(json.DungeonUnitList).map(x=> HellsChickenDungeonSaveUnitInfoFormat.fromJSON(x))
+		obj.RemainRewardEvent = Object.values(json.RemainRewardEvent).map(x=> RandomDungeonEncounterRewardEventInfoFormat.fromJSON(x))
+		return obj
+	}
+
+}
+
+class ReqPacket_ExitExpDungeon {
+	formationId?: number;
+	isWin?: number;
+	supportCharacterId?: number;
+	supportParticipate?: boolean;
+	battlePassParameters?: BattlePassParameterFormat;
+	static fromJSON(json:any){
+		let obj = new ReqPacket_ExitExpDungeon()
+		obj.formationId = json.formationId
+		obj.isWin = json.isWin
+		obj.supportCharacterId = json.supportCharacterId
+		obj.supportParticipate = json.supportParticipate
+		obj.battlePassParameters = BattlePassParameterFormat.fromJSON(json.battlePassParameters)
+		return obj
+	}
+
+}
+
+class ExpDungeonClearInfoFormat {
+	dungeonid?: number;
+	clearnumber?: number;
+	Dungeonid?: number;
+	Clearnumber?: number;
+	static fromJSON(json:any){
+		let obj = new ExpDungeonClearInfoFormat()
+		obj.dungeonid = json.dungeonid
+		obj.clearnumber = json.clearnumber
+		obj.Dungeonid = json.Dungeonid
+		obj.Clearnumber = json.Clearnumber
+		return obj
+	}
+
+}
+
+class ThreadDungeonClearInfoFormat {
+	dungeonid?: number;
+	clearnumber?: number;
+	dungeonlevel?: number;
+	Dungeonid?: number;
+	Clearnumber?: number;
+	Dungeonlevel?: number;
+	static fromJSON(json:any){
+		let obj = new ThreadDungeonClearInfoFormat()
+		obj.dungeonid = json.dungeonid
+		obj.clearnumber = json.clearnumber
+		obj.dungeonlevel = json.dungeonlevel
+		obj.Dungeonid = json.Dungeonid
+		obj.Clearnumber = json.Clearnumber
+		obj.Dungeonlevel = json.Dungeonlevel
+		return obj
+	}
+
+}
+
+class DailyLoginRewardStateFormat {
+	weekid?: number;
+	id?: number;
+	static fromJSON(json:any){
+		let obj = new DailyLoginRewardStateFormat()
+		obj.weekid = json.weekid
+		obj.id = json.id
+		return obj
+	}
+
+}
+
+class MirrorDungeonClearInfoFormat {
+	dungeonid?: number;
+	idx?: number;
+	clearnumber?: number;
+	defeatnumber?: number;
+	static fromJSON(json:any){
+		let obj = new MirrorDungeonClearInfoFormat()
+		obj.dungeonid = json.dungeonid
+		obj.idx = json.idx
+		obj.clearnumber = json.clearnumber
+		obj.defeatnumber = json.defeatnumber
+		return obj
+	}
+
+}
+
+class StoryDungeonSaveUnitInfoFormat {
+	sp?: number;
+	gi?: number;
+	static fromJSON(json:any){
+		let obj = new StoryDungeonSaveUnitInfoFormat()
+		obj.sp = json.sp
+		obj.gi = json.gi
+		return obj
+	}
+
+}
+
+class ReqPacket_UpdateStoryDungeonMapNodeCommand {
+	choiceEventData?: DungeonChoiceEventSaveDataFormat;
+	dungeonUnitList?: StoryDungeonSaveUnitInfoFormat[];
+	updatedEgoGifts?: DungeonMapEgoGiftFormat[];
+	static fromJSON(json:any){
+		let obj = new ReqPacket_UpdateStoryDungeonMapNodeCommand()
+		obj.choiceEventData = DungeonChoiceEventSaveDataFormat.fromJSON(json.choiceEventData)
+		obj.dungeonUnitList = Object.values(json.dungeonUnitList).map(x=> StoryDungeonSaveUnitInfoFormat.fromJSON(x))
+		obj.updatedEgoGifts = Object.values(json.updatedEgoGifts).map(x=> DungeonMapEgoGiftFormat.fromJSON(x))
+		return obj
+	}
+
+}
+
+class ResPacket_UpdateStoryDungeonMapNodeCommand {
+	prevChoiceEvent?: DungeonChoiceEventSaveDataFormat[];
+	currentEgoGifts?: DungeonMapEgoGiftFormat[];
+	isAllDie?: number;
+	PrevChoiceEvent?: DungeonChoiceEventSaveDataFormat[];
+	CurrentEgoGifts?: DungeonMapEgoGiftFormat[];
+	IsAllDie?: number;
+	static fromJSON(json:any){
+		let obj = new ResPacket_UpdateStoryDungeonMapNodeCommand()
+		obj.prevChoiceEvent = Object.values(json.prevChoiceEvent).map(x=> DungeonChoiceEventSaveDataFormat.fromJSON(x))
+		obj.currentEgoGifts = Object.values(json.currentEgoGifts).map(x=> DungeonMapEgoGiftFormat.fromJSON(x))
+		obj.isAllDie = json.isAllDie
+		obj.PrevChoiceEvent = Object.values(json.PrevChoiceEvent).map(x=> DungeonChoiceEventSaveDataFormat.fromJSON(x))
+		obj.CurrentEgoGifts = Object.values(json.CurrentEgoGifts).map(x=> DungeonMapEgoGiftFormat.fromJSON(x))
+		obj.IsAllDie = json.IsAllDie
+		return obj
+	}
+
+}
+
+class ReqPacket_EnterStoryDungeonMapNodeBattleAfterChoice {
+	dungeonUnitList?: StoryDungeonSaveUnitInfoFormat[];
+	participatedPids?: number[];
+	abnormalityids?: number[];
+	static fromJSON(json:any){
+		let obj = new ReqPacket_EnterStoryDungeonMapNodeBattleAfterChoice()
+		obj.dungeonUnitList = Object.values(json.dungeonUnitList).map(x=> StoryDungeonSaveUnitInfoFormat.fromJSON(x))
+		obj.participatedPids = json.participatedPids
+		obj.abnormalityids = json.abnormalityids
+		return obj
+	}
+
+}
+
+class ReqPacket_UpdateStoryDungeonUnits {
+	dungeonunitlist?: StoryDungeonSaveUnitInfoFormat[];
+	static fromJSON(json:any){
+		let obj = new ReqPacket_UpdateStoryDungeonUnits()
+		obj.dungeonunitlist = Object.values(json.dungeonunitlist).map(x=> StoryDungeonSaveUnitInfoFormat.fromJSON(x))
+		return obj
+	}
+
+}
+
+class StoryDungeonCurrentInfoFormat {
+	dul?: StoryDungeonSaveUnitInfoFormat[];
+	scpn?: DungeonMapNodeFormat;
+	scpegl?: DungeonMapEgoGiftFormat[];
+	opn?: number[];
+	static fromJSON(json:any){
+		let obj = new StoryDungeonCurrentInfoFormat()
+		obj.dul = Object.values(json.dul).map(x=> StoryDungeonSaveUnitInfoFormat.fromJSON(x))
+		obj.scpn = DungeonMapNodeFormat.fromJSON(json.scpn)
+		obj.scpegl = Object.values(json.scpegl).map(x=> DungeonMapEgoGiftFormat.fromJSON(x))
+		obj.opn = json.opn
+		return obj
+	}
+
+}
+
+class ResPacket_ReturnSavePointStoryDungeonMap {
+	currentInfo?: StoryDungeonCurrentInfoFormat;
+	CurrentInfo?: StoryDungeonCurrentInfoFormat;
+	static fromJSON(json:any){
+		let obj = new ResPacket_ReturnSavePointStoryDungeonMap()
+		obj.currentInfo = StoryDungeonCurrentInfoFormat.fromJSON(json.currentInfo)
+		obj.CurrentInfo = StoryDungeonCurrentInfoFormat.fromJSON(json.CurrentInfo)
+		return obj
+	}
+
+}
+
+class ResPacket_ExitStoryDungeonMapNodeByForcely {
+	currentInfo?: StoryDungeonCurrentInfoFormat;
+	isAllDie?: number;
+	CurrentInfo?: StoryDungeonCurrentInfoFormat;
+	IsAllDie?: number;
+	static fromJSON(json:any){
+		let obj = new ResPacket_ExitStoryDungeonMapNodeByForcely()
+		obj.currentInfo = StoryDungeonCurrentInfoFormat.fromJSON(json.currentInfo)
+		obj.isAllDie = json.isAllDie
+		obj.CurrentInfo = StoryDungeonCurrentInfoFormat.fromJSON(json.CurrentInfo)
+		obj.IsAllDie = json.IsAllDie
+		return obj
+	}
+
+}
+
+class PityPoint {
+	gachaID?: number;
+	pityNumber?: number;
+	static fromJSON(json:any){
+		let obj = new PityPoint()
+		obj.gachaID = json.gachaID
+		obj.pityNumber = json.pityNumber
+		return obj
+	}
+
+}
+
+class ItemFormat {
+	item_id?: number;
+	num?: number;
+	static fromJSON(json:any){
+		let obj = new ItemFormat()
+		obj.item_id = json.item_id
+		obj.num = json.num
+		return obj
+	}
+
+}
+
+class PersonalityFormat {
+	personality_id?: number;
+	level?: number;
+	exp?: number;
+	gacksung?: number;
+	order_id?: number;
+	gacksung_illust_type?: number;
+	acquire_time?: string;
+	static fromJSON(json:any){
+		let obj = new PersonalityFormat()
+		obj.personality_id = json.personality_id
+		obj.level = json.level
+		obj.exp = json.exp
+		obj.gacksung = json.gacksung
+		obj.order_id = json.order_id
+		obj.gacksung_illust_type = json.gacksung_illust_type
+		obj.acquire_time = json.acquire_time
+		return obj
+	}
+
+}
+
+class ResPacket_UsePersonalityExpItem {
+	resultPersonality?: PersonalityFormat;
+	static fromJSON(json:any){
+		let obj = new ResPacket_UsePersonalityExpItem()
+		obj.resultPersonality = PersonalityFormat.fromJSON(json.resultPersonality)
+		return obj
+	}
+
+}
+
+class DateUtil {
+	_date?: Il2CppSystem.DateTime;
+	UtcDate?: Il2CppSystem.DateTime;
+	isPast?: boolean;
+	isFuture?: boolean;
+	static fromJSON(json:any){
+		let obj = new DateUtil()
+		obj._date = Il2CppSystem.DateTime.fromJSON(json._date)
+		obj.UtcDate = Il2CppSystem.DateTime.fromJSON(json.UtcDate)
+		obj.isPast = json.isPast
+		obj.isFuture = json.isFuture
+		return obj
+	}
+
+}
+
+class UserAuthFormat {
+	uid?: number;
+	public_id?: number;
+	db_id?: number;
+	auth_code?: string;
+	last_login_date?: string;
+	last_update_date?: string;
+	data_version?: number;
+	static fromJSON(json:any){
+		let obj = new UserAuthFormat()
+		obj.uid = json.uid
+		obj.public_id = json.public_id
+		obj.db_id = json.db_id
+		obj.auth_code = json.auth_code
+		obj.last_login_date = json.last_login_date
+		obj.last_update_date = json.last_update_date
+		obj.data_version = json.data_version
+		return obj
+	}
+
+}
+
+class ResPacket_SignInAsGuest {
+	userAuth?: UserAuthFormat;
+	static fromJSON(json:any){
+		let obj = new ResPacket_SignInAsGuest()
+		obj.userAuth = UserAuthFormat.fromJSON(json.userAuth)
+		return obj
+	}
+
+}
+
+class ResPacket_SignInAsNewGuest {
+	userAuth?: UserAuthFormat;
+	authToken?: string;
+	static fromJSON(json:any){
+		let obj = new ResPacket_SignInAsNewGuest()
+		obj.userAuth = UserAuthFormat.fromJSON(json.userAuth)
+		obj.authToken = json.authToken
+		return obj
+	}
+
+}
+
+class AccountInfoFormat {
+	uid?: number;
+	google_account?: string;
+	apple_account?: string;
+	steam_account?: string;
+	static fromJSON(json:any){
+		let obj = new AccountInfoFormat()
+		obj.uid = json.uid
+		obj.google_account = json.google_account
+		obj.apple_account = json.apple_account
+		obj.steam_account = json.steam_account
+		return obj
+	}
+
+}
+
+class ResPacket_SignInAsGoogle {
+	userAuth?: UserAuthFormat;
+	accountInfo?: AccountInfoFormat;
+	static fromJSON(json:any){
+		let obj = new ResPacket_SignInAsGoogle()
+		obj.userAuth = UserAuthFormat.fromJSON(json.userAuth)
+		obj.accountInfo = AccountInfoFormat.fromJSON(json.accountInfo)
+		return obj
+	}
+
+}
+
+class ResPacket_LinkWithGoogle {
+	userAuth?: UserAuthFormat;
+	accountInfo?: AccountInfoFormat;
+	static fromJSON(json:any){
+		let obj = new ResPacket_LinkWithGoogle()
+		obj.userAuth = UserAuthFormat.fromJSON(json.userAuth)
+		obj.accountInfo = AccountInfoFormat.fromJSON(json.accountInfo)
+		return obj
+	}
+
+}
+
+class ResPacket_SignInAsApple {
+	userAuth?: UserAuthFormat;
+	accountInfo?: AccountInfoFormat;
+	static fromJSON(json:any){
+		let obj = new ResPacket_SignInAsApple()
+		obj.userAuth = UserAuthFormat.fromJSON(json.userAuth)
+		obj.accountInfo = AccountInfoFormat.fromJSON(json.accountInfo)
+		return obj
+	}
+
+}
+
+class ResPacket_LinkWithApple {
+	userAuth?: UserAuthFormat;
+	accountInfo?: AccountInfoFormat;
+	static fromJSON(json:any){
+		let obj = new ResPacket_LinkWithApple()
+		obj.userAuth = UserAuthFormat.fromJSON(json.userAuth)
+		obj.accountInfo = AccountInfoFormat.fromJSON(json.accountInfo)
+		return obj
+	}
+
+}
+
+class ResPacket_SignInAsSteam {
+	userAuth?: UserAuthFormat;
+	accountInfo?: AccountInfoFormat;
+	walletCurrency?: string;
+	static fromJSON(json:any){
+		let obj = new ResPacket_SignInAsSteam()
+		obj.userAuth = UserAuthFormat.fromJSON(json.userAuth)
+		obj.accountInfo = AccountInfoFormat.fromJSON(json.accountInfo)
+		obj.walletCurrency = json.walletCurrency
+		return obj
+	}
+
+}
+
+class LinkAuthFormat {
+	public_id?: number;
+	password?: string;
+	expiry_date?: string;
+	details?: string;
+	static fromJSON(json:any){
+		let obj = new LinkAuthFormat()
+		obj.public_id = json.public_id
+		obj.password = json.password
+		obj.expiry_date = json.expiry_date
+		obj.details = json.details
+		return obj
+	}
+
+}
+
+class ResPacket_RefreshLinkAuth {
+	linkAuth?: LinkAuthFormat;
+	state?: string;
+	static fromJSON(json:any){
+		let obj = new ResPacket_RefreshLinkAuth()
+		obj.linkAuth = LinkAuthFormat.fromJSON(json.linkAuth)
+		obj.state = json.state
+		return obj
+	}
+
+}
+
+class ResPacket_TryToSecede {
+	secessionDate?: string;
+	_secessionDate?: DateUtil;
+	SecessionDate?: DateUtil;
+	static fromJSON(json:any){
+		let obj = new ResPacket_TryToSecede()
+		obj.secessionDate = json.secessionDate
+		obj._secessionDate = DateUtil.fromJSON(json._secessionDate)
+		obj.SecessionDate = DateUtil.fromJSON(json.SecessionDate)
+		return obj
+	}
+
+}
+
+class ResPacket_ExitMirrorDungeonCommand {
+	isEndDungeon?: number;
+	isclear?: number;
+	acquiredChip?: number;
+	statistics?: DungeonStatisticsDataFormat[];
+	IsClear?: boolean;
+	Statistics?: DungeonStatisticsDataFormat[];
+	static fromJSON(json:any){
+		let obj = new ResPacket_ExitMirrorDungeonCommand()
+		obj.isEndDungeon = json.isEndDungeon
+		obj.isclear = json.isclear
+		obj.acquiredChip = json.acquiredChip
+		obj.statistics = Object.values(json.statistics).map(x=> DungeonStatisticsDataFormat.fromJSON(x))
+		obj.IsClear = json.IsClear
+		obj.Statistics = Object.values(json.Statistics).map(x=> DungeonStatisticsDataFormat.fromJSON(x))
+		return obj
+	}
+
+}
+
+class ReqPacket_EnterMirrorDungeonMapNodeCommand {
+	currentnode?: DungeonMapNodeFormat;
+	abnormalityids?: number[];
+	participatedPIds?: number[];
+	static fromJSON(json:any){
+		let obj = new ReqPacket_EnterMirrorDungeonMapNodeCommand()
+		obj.currentnode = DungeonMapNodeFormat.fromJSON(json.currentnode)
+		obj.abnormalityids = json.abnormalityids
+		obj.participatedPIds = json.participatedPIds
+		return obj
+	}
+
+}
+
+class UserMirrorDungeonShopDataFormat {
+	ph?: number;
+	pup?: number;
+	upid?: number;
+	peg?: number;
+	pcf?: number;
+	pabu?: number;
+	pueg?: number;
+	egpool?: number[];
+	static fromJSON(json:any){
+		let obj = new UserMirrorDungeonShopDataFormat()
+		obj.ph = json.ph
+		obj.pup = json.pup
+		obj.upid = json.upid
+		obj.peg = json.peg
+		obj.pcf = json.pcf
+		obj.pabu = json.pabu
+		obj.pueg = json.pueg
+		obj.egpool = json.egpool
+		return obj
+	}
+
+}
+
+class MirrorDungeonPrevUnitInfoFormat {
+	pid?: number;
+	ch?: number;
+	cm?: number;
+	upidx?: number[];
+	static fromJSON(json:any){
+		let obj = new MirrorDungeonPrevUnitInfoFormat()
+		obj.pid = json.pid
+		obj.ch = json.ch
+		obj.cm = json.cm
+		obj.upidx = json.upidx
+		return obj
+	}
+
+}
+
+class MirrorDungeonSaveUnitInfoFormat {
+	upidx?: number[];
+	static fromJSON(json:any){
+		let obj = new MirrorDungeonSaveUnitInfoFormat()
+		obj.upidx = json.upidx
+		return obj
+	}
+
+}
+
+class ResPacket_UpdateMirrorDungeonMapNodeCommand {
+	prevChoiceEvent?: DungeonChoiceEventSaveDataFormat[];
+	currentEgoGifts?: DungeonMapEgoGiftFormat[];
+	PrevChoiceEvent?: DungeonChoiceEventSaveDataFormat[];
+	CurrentEgoGifts?: DungeonMapEgoGiftFormat[];
+	static fromJSON(json:any){
+		let obj = new ResPacket_UpdateMirrorDungeonMapNodeCommand()
+		obj.prevChoiceEvent = Object.values(json.prevChoiceEvent).map(x=> DungeonChoiceEventSaveDataFormat.fromJSON(x))
+		obj.currentEgoGifts = Object.values(json.currentEgoGifts).map(x=> DungeonMapEgoGiftFormat.fromJSON(x))
+		obj.PrevChoiceEvent = Object.values(json.PrevChoiceEvent).map(x=> DungeonChoiceEventSaveDataFormat.fromJSON(x))
+		obj.CurrentEgoGifts = Object.values(json.CurrentEgoGifts).map(x=> DungeonMapEgoGiftFormat.fromJSON(x))
+		return obj
+	}
+
+}
+
+class ReqPacket_EnterMirrordungeonMapNodeBattleAfterChoice {
+	participatedPids?: number[];
+	abnormalityids?: number[];
+	dungeonUnitList?: MirrorDungeonSaveUnitInfoFormat[];
+	static fromJSON(json:any){
+		let obj = new ReqPacket_EnterMirrordungeonMapNodeBattleAfterChoice()
+		obj.participatedPids = json.participatedPids
+		obj.abnormalityids = json.abnormalityids
+		obj.dungeonUnitList = Object.values(json.dungeonUnitList).map(x=> MirrorDungeonSaveUnitInfoFormat.fromJSON(x))
+		return obj
+	}
+
+}
+
+class MirrorDungeonCurrentInfoFormat {
+	eid?: number;
+	dul?: MirrorDungeonSaveUnitInfoFormat[];
+	rre?: RandomDungeonEncounterRewardEventInfoFormat[];
+	ri?: number;
+	cost?: number;
+	shop?: UserMirrorDungeonShopDataFormat;
+	prevdul?: MirrorDungeonPrevUnitInfoFormat[];
+	preves?: number[];
+	static fromJSON(json:any){
+		let obj = new MirrorDungeonCurrentInfoFormat()
+		obj.eid = json.eid
+		obj.dul = Object.values(json.dul).map(x=> MirrorDungeonSaveUnitInfoFormat.fromJSON(x))
+		obj.rre = Object.values(json.rre).map(x=> RandomDungeonEncounterRewardEventInfoFormat.fromJSON(x))
+		obj.ri = json.ri
+		obj.cost = json.cost
+		obj.shop = UserMirrorDungeonShopDataFormat.fromJSON(json.shop)
+		obj.prevdul = Object.values(json.prevdul).map(x=> MirrorDungeonPrevUnitInfoFormat.fromJSON(x))
+		obj.preves = json.preves
+		return obj
+	}
+
+}
+
+class ReqPacket_UpdateMirrordungeonUnits {
+	dungeonunitlist?: MirrorDungeonSaveUnitInfoFormat[];
+	static fromJSON(json:any){
+		let obj = new ReqPacket_UpdateMirrordungeonUnits()
+		obj.dungeonunitlist = Object.values(json.dungeonunitlist).map(x=> MirrorDungeonSaveUnitInfoFormat.fromJSON(x))
+		return obj
+	}
+
+}
+
+class ResPacket_ExitMirrorDungeonMapNodeByForcely {
+	currentInfo?: MirrorDungeonCurrentInfoFormat;
+	CurrentInfo?: MirrorDungeonCurrentInfoFormat;
+	static fromJSON(json:any){
+		let obj = new ResPacket_ExitMirrorDungeonMapNodeByForcely()
+		obj.currentInfo = MirrorDungeonCurrentInfoFormat.fromJSON(json.currentInfo)
+		obj.CurrentInfo = MirrorDungeonCurrentInfoFormat.fromJSON(json.CurrentInfo)
+		return obj
+	}
+
+}
+
+class ResPacket_AcquireEgoGiftEventMirrorDungeonCommand {
+	egoGifts?: DungeonMapEgoGiftFormat[];
+	remainRewardEvent?: RandomDungeonEncounterRewardEventInfoFormat[];
+	EgoGifts?: DungeonMapEgoGiftFormat[];
+	RemainRewardEvent?: RandomDungeonEncounterRewardEventInfoFormat[];
+	static fromJSON(json:any){
+		let obj = new ResPacket_AcquireEgoGiftEventMirrorDungeonCommand()
+		obj.egoGifts = Object.values(json.egoGifts).map(x=> DungeonMapEgoGiftFormat.fromJSON(x))
+		obj.remainRewardEvent = Object.values(json.remainRewardEvent).map(x=> RandomDungeonEncounterRewardEventInfoFormat.fromJSON(x))
+		obj.EgoGifts = Object.values(json.EgoGifts).map(x=> DungeonMapEgoGiftFormat.fromJSON(x))
+		obj.RemainRewardEvent = Object.values(json.RemainRewardEvent).map(x=> RandomDungeonEncounterRewardEventInfoFormat.fromJSON(x))
+		return obj
+	}
+
+}
+
+class ResPacket_RejectRewardEgoGiftsMirrorDungeonCommand {
+	remainRewardEvent?: RandomDungeonEncounterRewardEventInfoFormat[];
+	RemainRewardEvent?: RandomDungeonEncounterRewardEventInfoFormat[];
+	static fromJSON(json:any){
+		let obj = new ResPacket_RejectRewardEgoGiftsMirrorDungeonCommand()
+		obj.remainRewardEvent = Object.values(json.remainRewardEvent).map(x=> RandomDungeonEncounterRewardEventInfoFormat.fromJSON(x))
+		obj.RemainRewardEvent = Object.values(json.RemainRewardEvent).map(x=> RandomDungeonEncounterRewardEventInfoFormat.fromJSON(x))
+		return obj
+	}
+
+}
+
+class ResPacket_AcquireCharacterEventDataMirrorDungeonCommand {
+	dungeonUnitList?: MirrorDungeonSaveUnitInfoFormat[];
+	remainRewardEvent?: RandomDungeonEncounterRewardEventInfoFormat[];
+	DungeonUnitList?: MirrorDungeonSaveUnitInfoFormat[];
+	RemainRewardEvent?: RandomDungeonEncounterRewardEventInfoFormat[];
+	static fromJSON(json:any){
+		let obj = new ResPacket_AcquireCharacterEventDataMirrorDungeonCommand()
+		obj.dungeonUnitList = Object.values(json.dungeonUnitList).map(x=> MirrorDungeonSaveUnitInfoFormat.fromJSON(x))
+		obj.remainRewardEvent = Object.values(json.remainRewardEvent).map(x=> RandomDungeonEncounterRewardEventInfoFormat.fromJSON(x))
+		obj.DungeonUnitList = Object.values(json.DungeonUnitList).map(x=> MirrorDungeonSaveUnitInfoFormat.fromJSON(x))
+		obj.RemainRewardEvent = Object.values(json.RemainRewardEvent).map(x=> RandomDungeonEncounterRewardEventInfoFormat.fromJSON(x))
+		return obj
+	}
+
+}
+
+class ResPacket_PersonalityLevelUpEventMirrorDungeonCommand {
+	dungeonUnitList?: MirrorDungeonSaveUnitInfoFormat[];
+	remainRewardEvent?: RandomDungeonEncounterRewardEventInfoFormat[];
+	DungeonUnitList?: MirrorDungeonSaveUnitInfoFormat[];
+	RemainRewardEvent?: RandomDungeonEncounterRewardEventInfoFormat[];
+	static fromJSON(json:any){
+		let obj = new ResPacket_PersonalityLevelUpEventMirrorDungeonCommand()
+		obj.dungeonUnitList = Object.values(json.dungeonUnitList).map(x=> MirrorDungeonSaveUnitInfoFormat.fromJSON(x))
+		obj.remainRewardEvent = Object.values(json.remainRewardEvent).map(x=> RandomDungeonEncounterRewardEventInfoFormat.fromJSON(x))
+		obj.DungeonUnitList = Object.values(json.DungeonUnitList).map(x=> MirrorDungeonSaveUnitInfoFormat.fromJSON(x))
+		obj.RemainRewardEvent = Object.values(json.RemainRewardEvent).map(x=> RandomDungeonEncounterRewardEventInfoFormat.fromJSON(x))
+		return obj
+	}
+
+}
+
+class ResPacket_PurchaseMirrordungeonHeal {
+	cost?: number;
+	dungeonUnitList?: MirrorDungeonSaveUnitInfoFormat[];
+	shopInfo?: UserMirrorDungeonShopDataFormat;
+	Cost?: number;
+	DungeonUnitList?: MirrorDungeonSaveUnitInfoFormat[];
+	ShopInfo?: UserMirrorDungeonShopDataFormat;
+	static fromJSON(json:any){
+		let obj = new ResPacket_PurchaseMirrordungeonHeal()
+		obj.cost = json.cost
+		obj.dungeonUnitList = Object.values(json.dungeonUnitList).map(x=> MirrorDungeonSaveUnitInfoFormat.fromJSON(x))
+		obj.shopInfo = UserMirrorDungeonShopDataFormat.fromJSON(json.shopInfo)
+		obj.Cost = json.Cost
+		obj.DungeonUnitList = Object.values(json.DungeonUnitList).map(x=> MirrorDungeonSaveUnitInfoFormat.fromJSON(x))
+		obj.ShopInfo = UserMirrorDungeonShopDataFormat.fromJSON(json.ShopInfo)
+		return obj
+	}
+
+}
+
+class ResPacket_PurchaseFormation {
+	cost?: number;
+	dungeonUnitList?: MirrorDungeonSaveUnitInfoFormat[];
+	shopInfo?: UserMirrorDungeonShopDataFormat;
+	Cost?: number;
+	DungeonUnitList?: MirrorDungeonSaveUnitInfoFormat[];
+	ShopInfo?: UserMirrorDungeonShopDataFormat;
+	static fromJSON(json:any){
+		let obj = new ResPacket_PurchaseFormation()
+		obj.cost = json.cost
+		obj.dungeonUnitList = Object.values(json.dungeonUnitList).map(x=> MirrorDungeonSaveUnitInfoFormat.fromJSON(x))
+		obj.shopInfo = UserMirrorDungeonShopDataFormat.fromJSON(json.shopInfo)
+		obj.Cost = json.Cost
+		obj.DungeonUnitList = Object.values(json.DungeonUnitList).map(x=> MirrorDungeonSaveUnitInfoFormat.fromJSON(x))
+		obj.ShopInfo = UserMirrorDungeonShopDataFormat.fromJSON(json.ShopInfo)
+		return obj
+	}
+
+}
+
+class ResPacket_PurchaseUpgradePersonality {
+	cost?: number;
+	dungeonUnitList?: MirrorDungeonSaveUnitInfoFormat[];
+	shopInfo?: UserMirrorDungeonShopDataFormat;
+	Cost?: number;
+	DungeonUnitList?: MirrorDungeonSaveUnitInfoFormat[];
+	ShopInfo?: UserMirrorDungeonShopDataFormat;
+	static fromJSON(json:any){
+		let obj = new ResPacket_PurchaseUpgradePersonality()
+		obj.cost = json.cost
+		obj.dungeonUnitList = Object.values(json.dungeonUnitList).map(x=> MirrorDungeonSaveUnitInfoFormat.fromJSON(x))
+		obj.shopInfo = UserMirrorDungeonShopDataFormat.fromJSON(json.shopInfo)
+		obj.Cost = json.Cost
+		obj.DungeonUnitList = Object.values(json.DungeonUnitList).map(x=> MirrorDungeonSaveUnitInfoFormat.fromJSON(x))
+		obj.ShopInfo = UserMirrorDungeonShopDataFormat.fromJSON(json.ShopInfo)
+		return obj
+	}
+
+}
+
+class ResPacket_PurchaseEgoGift {
+	cost?: number;
+	egogifts?: DungeonMapEgoGiftFormat[];
+	shopInfo?: UserMirrorDungeonShopDataFormat;
+	Cost?: number;
+	Egogifts?: DungeonMapEgoGiftFormat[];
+	ShopInfo?: UserMirrorDungeonShopDataFormat;
+	static fromJSON(json:any){
+		let obj = new ResPacket_PurchaseEgoGift()
+		obj.cost = json.cost
+		obj.egogifts = Object.values(json.egogifts).map(x=> DungeonMapEgoGiftFormat.fromJSON(x))
+		obj.shopInfo = UserMirrorDungeonShopDataFormat.fromJSON(json.shopInfo)
+		obj.Cost = json.Cost
+		obj.Egogifts = Object.values(json.Egogifts).map(x=> DungeonMapEgoGiftFormat.fromJSON(x))
+		obj.ShopInfo = UserMirrorDungeonShopDataFormat.fromJSON(json.ShopInfo)
+		return obj
+	}
+
+}
+
+class MirrorDungeonStartBuffInfoFormat {
+	dungeonid?: number;
+	bufstate?: number[];
+	chip?: number;
+	static fromJSON(json:any){
+		let obj = new MirrorDungeonStartBuffInfoFormat()
+		obj.dungeonid = json.dungeonid
+		obj.bufstate = json.bufstate
+		obj.chip = json.chip
+		return obj
+	}
+
+}
+
+class ResPacket_GetStartBuffFInfo {
+	startBuffInfo?: MirrorDungeonStartBuffInfoFormat;
+	static fromJSON(json:any){
+		let obj = new ResPacket_GetStartBuffFInfo()
+		obj.startBuffInfo = MirrorDungeonStartBuffInfoFormat.fromJSON(json.startBuffInfo)
+		return obj
+	}
+
+}
+
+class ResPacket_PurchaseStartBuff {
+	startBuffInfo?: MirrorDungeonStartBuffInfoFormat;
+	static fromJSON(json:any){
+		let obj = new ResPacket_PurchaseStartBuff()
+		obj.startBuffInfo = MirrorDungeonStartBuffInfoFormat.fromJSON(json.startBuffInfo)
+		return obj
+	}
+
+}
+
+class ResPacket_RemoveMirrorDungeonEgoGift {
+	egs?: DungeonMapEgoGiftFormat[];
+	EgoGifts?: DungeonMapEgoGiftFormat[];
+	static fromJSON(json:any){
+		let obj = new ResPacket_RemoveMirrorDungeonEgoGift()
+		obj.egs = Object.values(json.egs).map(x=> DungeonMapEgoGiftFormat.fromJSON(x))
+		obj.EgoGifts = Object.values(json.EgoGifts).map(x=> DungeonMapEgoGiftFormat.fromJSON(x))
+		return obj
+	}
+
+}
+
+class ResPacket_MirrorDungeonGiveUpSelectingEgoGift {
+	remainRewardEvent?: RandomDungeonEncounterRewardEventInfoFormat[];
+	RemainRewardEvent?: RandomDungeonEncounterRewardEventInfoFormat[];
+	static fromJSON(json:any){
+		let obj = new ResPacket_MirrorDungeonGiveUpSelectingEgoGift()
+		obj.remainRewardEvent = Object.values(json.remainRewardEvent).map(x=> RandomDungeonEncounterRewardEventInfoFormat.fromJSON(x))
+		obj.RemainRewardEvent = Object.values(json.RemainRewardEvent).map(x=> RandomDungeonEncounterRewardEventInfoFormat.fromJSON(x))
+		return obj
+	}
+
+}
+
+class UserTheaterInfoFormat {
+	rewardedIDList?: string[];
+	static fromJSON(json:any){
+		let obj = new UserTheaterInfoFormat()
+		obj.rewardedIDList = json.rewardedIDList
+		return obj
+	}
+
+}
+
+class ResPacket_GetTheaterInfo {
+	theaterInfo?: UserTheaterInfoFormat;
+	static fromJSON(json:any){
+		let obj = new ResPacket_GetTheaterInfo()
+		obj.theaterInfo = UserTheaterInfoFormat.fromJSON(json.theaterInfo)
+		return obj
+	}
+
+}
+
+class ResPacket_CompleteTheaterStory {
+	isRewarded?: boolean;
+	theaterInfo?: UserTheaterInfoFormat;
+	static fromJSON(json:any){
+		let obj = new ResPacket_CompleteTheaterStory()
+		obj.isRewarded = json.isRewarded
+		obj.theaterInfo = UserTheaterInfoFormat.fromJSON(json.theaterInfo)
+		return obj
+	}
+
+}
+
+class UserBannerDataFormat {
+	id?: number;
+	acquiretime?: string;
+	value?: number;
+	static fromJSON(json:any){
+		let obj = new UserBannerDataFormat()
+		obj.id = json.id
+		obj.acquiretime = json.acquiretime
+		obj.value = json.value
+		return obj
+	}
+
+}
+
+class SupportPersonalitySlotFormat {
+	idx?: number;
+	static fromJSON(json:any){
+		let obj = new SupportPersonalitySlotFormat()
+		obj.idx = json.idx
+		return obj
+	}
+
+}
+
+class UserPublicBannerFormat {
+	id?: number;
+	value?: number;
+	idx?: number;
+	static fromJSON(json:any){
+		let obj = new UserPublicBannerFormat()
+		obj.id = json.id
+		obj.value = json.value
+		obj.idx = json.idx
+		return obj
+	}
+
+}
+
+class UserProfileBorderFormat {
+	id?: number;
+	date?: string;
+	static fromJSON(json:any){
+		let obj = new UserProfileBorderFormat()
+		obj.id = json.id
+		obj.date = json.date
+		return obj
+	}
+
+}
+
+class UserProfileEgobackgroundFormat {
+	id?: number;
+	date?: string;
+	static fromJSON(json:any){
+		let obj = new UserProfileEgobackgroundFormat()
+		obj.id = json.id
+		obj.date = json.date
+		return obj
+	}
+
+}
+
+class ResPacket_PlayVendingMachine {
+	itemConsumptions?: ItemFormat[];
+	static fromJSON(json:any){
+		let obj = new ResPacket_PlayVendingMachine()
+		obj.itemConsumptions = Object.values(json.itemConsumptions).map(x=> ItemFormat.fromJSON(x))
+		return obj
+	}
+
+}
+
+class ReqPacket_ExchangeTwine {
+	paidPieces?: ItemFormat[];
+	static fromJSON(json:any){
+		let obj = new ReqPacket_ExchangeTwine()
+		obj.paidPieces = Object.values(json.paidPieces).map(x=> ItemFormat.fromJSON(x))
+		return obj
+	}
+
+}
+
+class RailwayUnitStatusFormat {
+	pid?: number;
+	hp?: number;
+	mp?: number;
+	isp?: number;
+	IsParticipated?: boolean;
+	static fromJSON(json:any){
+		let obj = new RailwayUnitStatusFormat()
+		obj.pid = json.pid
+		obj.hp = json.hp
+		obj.mp = json.mp
+		obj.isp = json.isp
+		obj.IsParticipated = json.IsParticipated
+		return obj
+	}
+
+}
+
+class RailwayEGOStockFormat {
+	t?: string;
+	n?: number;
+	static fromJSON(json:any){
+		let obj = new RailwayEGOStockFormat()
+		obj.t = json.t
+		obj.n = json.n
+		return obj
+	}
+
+}
+
+class RailwayStatisticsDataFormat {
+	id?: number;
+	gd?: number;
+	rd?: number;
+	static fromJSON(json:any){
+		let obj = new RailwayStatisticsDataFormat()
+		obj.id = json.id
+		obj.gd = json.gd
+		obj.rd = json.rd
+		return obj
+	}
+
+}
+
+class DungeonEgoFormat {
+	id?: number;
+	g?: number;
+	idx?: number;
+	static fromJSON(json:any){
+		let obj = new DungeonEgoFormat()
+		obj.id = json.id
+		obj.g = json.g
+		obj.idx = json.idx
+		return obj
+	}
+
+}
+
+class RandomDungeonMapNodeFormatForMapFormat {
+	f?: number;
+	s?: number;
+	nid?: number;
+	e?: number;
+	eid?: number;
+	nnids?: number[];
+	static fromJSON(json:any){
+		let obj = new RandomDungeonMapNodeFormatForMapFormat()
+		obj.f = json.f
+		obj.s = json.s
+		obj.nid = json.nid
+		obj.e = json.e
+		obj.eid = json.eid
+		obj.nnids = json.nnids
+		return obj
+	}
+
+}
+
+class ELEMENT_TYPE {
+	value__?: number;
+	static fromJSON(json:any){
+		let obj = new ELEMENT_TYPE()
+		obj.value__ = json.value__
+		return obj
+	}
+
+}
+
+class Element {
+	type?: string;
+	_type?: ELEMENT_TYPE;
+	id?: number;
+	num?: number;
+	Type?: ELEMENT_TYPE;
+	Id?: number;
+	Num?: number;
+	static fromJSON(json:any){
+		let obj = new Element()
+		obj.type = json.type
+		obj._type = ELEMENT_TYPE.fromJSON(json._type)
+		obj.id = json.id
+		obj.num = json.num
+		obj.Type = ELEMENT_TYPE.fromJSON(json.Type)
+		obj.Id = json.Id
+		obj.Num = json.Num
+		return obj
+	}
+
+}
+
+class PartResistFormat {
+	id?: number;
+	atrr?: number[];
+	atkr?: number[];
+	static fromJSON(json:any){
+		let obj = new PartResistFormat()
+		obj.id = json.id
+		obj.atrr = json.atrr
+		obj.atkr = json.atkr
+		return obj
+	}
+
+}
+
+class ReqPacket_UpdateHellsChickenDungeonMapNodeCommand {
+	choiceEventData?: DungeonChoiceEventSaveDataFormat;
+	dungeonUnitList?: HellsChickenDungeonSaveUnitInfoFormat[];
+	updatedEgoGifts?: DungeonMapEgoGiftFormat[];
+	static fromJSON(json:any){
+		let obj = new ReqPacket_UpdateHellsChickenDungeonMapNodeCommand()
+		obj.choiceEventData = DungeonChoiceEventSaveDataFormat.fromJSON(json.choiceEventData)
+		obj.dungeonUnitList = Object.values(json.dungeonUnitList).map(x=> HellsChickenDungeonSaveUnitInfoFormat.fromJSON(x))
+		obj.updatedEgoGifts = Object.values(json.updatedEgoGifts).map(x=> DungeonMapEgoGiftFormat.fromJSON(x))
+		return obj
+	}
+
+}
+
+class ResPacket_UpdateHellsChickenDungeonMapNodeCommand {
+	prevChoiceEvent?: DungeonChoiceEventSaveDataFormat[];
+	currentEgoGifts?: DungeonMapEgoGiftFormat[];
+	PrevChoiceEvent?: DungeonChoiceEventSaveDataFormat[];
+	CurrentEgoGifts?: DungeonMapEgoGiftFormat[];
+	static fromJSON(json:any){
+		let obj = new ResPacket_UpdateHellsChickenDungeonMapNodeCommand()
+		obj.prevChoiceEvent = Object.values(json.prevChoiceEvent).map(x=> DungeonChoiceEventSaveDataFormat.fromJSON(x))
+		obj.currentEgoGifts = Object.values(json.currentEgoGifts).map(x=> DungeonMapEgoGiftFormat.fromJSON(x))
+		obj.PrevChoiceEvent = Object.values(json.PrevChoiceEvent).map(x=> DungeonChoiceEventSaveDataFormat.fromJSON(x))
+		obj.CurrentEgoGifts = Object.values(json.CurrentEgoGifts).map(x=> DungeonMapEgoGiftFormat.fromJSON(x))
+		return obj
+	}
+
+}
+
+class HellsChickenDungeonCurrentInfoFormat {
+	cn?: DungeonMapNodeFormat;
+	egs?: DungeonMapEgoGiftFormat[];
+	pnids?: number[];
+	nr?: number;
+	pce?: DungeonChoiceEventSaveDataFormat[];
+	ess?: DungeonEgoSkillStockFormat[];
+	eid?: number;
+	dul?: HellsChickenDungeonSaveUnitInfoFormat[];
+	rre?: RandomDungeonEncounterRewardEventInfoFormat[];
+	static fromJSON(json:any){
+		let obj = new HellsChickenDungeonCurrentInfoFormat()
+		obj.cn = DungeonMapNodeFormat.fromJSON(json.cn)
+		obj.egs = Object.values(json.egs).map(x=> DungeonMapEgoGiftFormat.fromJSON(x))
+		obj.pnids = json.pnids
+		obj.nr = json.nr
+		obj.pce = Object.values(json.pce).map(x=> DungeonChoiceEventSaveDataFormat.fromJSON(x))
+		obj.ess = Object.values(json.ess).map(x=> DungeonEgoSkillStockFormat.fromJSON(x))
+		obj.eid = json.eid
+		obj.dul = Object.values(json.dul).map(x=> HellsChickenDungeonSaveUnitInfoFormat.fromJSON(x))
+		obj.rre = Object.values(json.rre).map(x=> RandomDungeonEncounterRewardEventInfoFormat.fromJSON(x))
+		return obj
+	}
+
+}
+
+class ResPacket_AcquireEgoGiftEventHellsChickenDungeonCommand {
+	egoGifts?: DungeonMapEgoGiftFormat[];
+	remainRewardEvent?: RandomDungeonEncounterRewardEventInfoFormat[];
+	EgoGifts?: DungeonMapEgoGiftFormat[];
+	RemainRewardEvent?: RandomDungeonEncounterRewardEventInfoFormat[];
+	static fromJSON(json:any){
+		let obj = new ResPacket_AcquireEgoGiftEventHellsChickenDungeonCommand()
+		obj.egoGifts = Object.values(json.egoGifts).map(x=> DungeonMapEgoGiftFormat.fromJSON(x))
+		obj.remainRewardEvent = Object.values(json.remainRewardEvent).map(x=> RandomDungeonEncounterRewardEventInfoFormat.fromJSON(x))
+		obj.EgoGifts = Object.values(json.EgoGifts).map(x=> DungeonMapEgoGiftFormat.fromJSON(x))
+		obj.RemainRewardEvent = Object.values(json.RemainRewardEvent).map(x=> RandomDungeonEncounterRewardEventInfoFormat.fromJSON(x))
+		return obj
+	}
+
+}
+
+class HellsChickenDungeonLevelUpPersonalityInfoFormat {
+	pid?: number;
+	egos?: DungeonEgoFormat[];
+	static fromJSON(json:any){
+		let obj = new HellsChickenDungeonLevelUpPersonalityInfoFormat()
+		obj.pid = json.pid
+		obj.egos = Object.values(json.egos).map(x=> DungeonEgoFormat.fromJSON(x))
+		return obj
+	}
+
+}
+
+class ReqPacket_PersonalityLevelUpEventHellsChickenDungeonCommand {
+	levelUpPersonalityFormat?: HellsChickenDungeonLevelUpPersonalityInfoFormat;
+	static fromJSON(json:any){
+		let obj = new ReqPacket_PersonalityLevelUpEventHellsChickenDungeonCommand()
+		obj.levelUpPersonalityFormat = HellsChickenDungeonLevelUpPersonalityInfoFormat.fromJSON(json.levelUpPersonalityFormat)
+		return obj
+	}
+
+}
+
+class ResPacket_AcquireHellsChickenReward {
+	rewardState?: number[];
+	rewards?: Element[];
+	static fromJSON(json:any){
+		let obj = new ResPacket_AcquireHellsChickenReward()
+		obj.rewardState = json.rewardState
+		obj.rewards = Object.values(json.rewards).map(x=> Element.fromJSON(x))
+		return obj
+	}
+
+}
+
+class ResPacket_AcquireAttendanceReward {
+	rewardState?: number[];
+	rewards?: Element[];
+	static fromJSON(json:any){
+		let obj = new ResPacket_AcquireAttendanceReward()
+		obj.rewardState = json.rewardState
+		obj.rewards = Object.values(json.rewards).map(x=> Element.fromJSON(x))
+		return obj
+	}
+
+}
+
+class ResPacket_BattlePassReward {
+	resultElements?: Element[];
+	static fromJSON(json:any){
+		let obj = new ResPacket_BattlePassReward()
+		obj.resultElements = Object.values(json.resultElements).map(x=> Element.fromJSON(x))
+		return obj
+	}
+
+}
+
+class ResPacket_BattlePassExLevelReward {
+	resultElements?: Element[];
+	static fromJSON(json:any){
+		let obj = new ResPacket_BattlePassExLevelReward()
+		obj.resultElements = Object.values(json.resultElements).map(x=> Element.fromJSON(x))
+		return obj
+	}
+
+}
+
+class ResPacket_ExitExpDungeon {
+	userExp?: number;
+	personalityinfos?: StagePersonalityInfoFormat[];
+	acquiredtickets?: Element[];
+	rewards?: Element[];
+	clearInfo?: ExpDungeonClearInfoFormat;
+	static fromJSON(json:any){
+		let obj = new ResPacket_ExitExpDungeon()
+		obj.userExp = json.userExp
+		obj.personalityinfos = Object.values(json.personalityinfos).map(x=> StagePersonalityInfoFormat.fromJSON(x))
+		obj.acquiredtickets = Object.values(json.acquiredtickets).map(x=> Element.fromJSON(x))
+		obj.rewards = Object.values(json.rewards).map(x=> Element.fromJSON(x))
+		obj.clearInfo = ExpDungeonClearInfoFormat.fromJSON(json.clearInfo)
+		return obj
+	}
+
+}
+
+class ResPacket_SkipExpDungeon {
+	userExp?: number;
+	rewards?: Element[];
+	static fromJSON(json:any){
+		let obj = new ResPacket_SkipExpDungeon()
+		obj.userExp = json.userExp
+		obj.rewards = Object.values(json.rewards).map(x=> Element.fromJSON(x))
+		return obj
+	}
+
+}
+
+class ResPacket_ExitThreadDungeon {
+	userExp?: number;
+	rewards?: Element[];
+	clearInfo?: ThreadDungeonClearInfoFormat;
+	static fromJSON(json:any){
+		let obj = new ResPacket_ExitThreadDungeon()
+		obj.userExp = json.userExp
+		obj.rewards = Object.values(json.rewards).map(x=> Element.fromJSON(x))
+		obj.clearInfo = ThreadDungeonClearInfoFormat.fromJSON(json.clearInfo)
+		return obj
+	}
+
+}
+
+class ResPacket_GetDailyDungeonClearInfo {
+	expDungeonClearInfo?: ExpDungeonClearInfoFormat[];
+	threadDungeonClearInfo?: ThreadDungeonClearInfoFormat[];
+	ExpDungeonClearInfo?: ExpDungeonClearInfoFormat[];
+	ThreadDungeonClearInfo?: ThreadDungeonClearInfoFormat[];
+	static fromJSON(json:any){
+		let obj = new ResPacket_GetDailyDungeonClearInfo()
+		obj.expDungeonClearInfo = Object.values(json.expDungeonClearInfo).map(x=> ExpDungeonClearInfoFormat.fromJSON(x))
+		obj.threadDungeonClearInfo = Object.values(json.threadDungeonClearInfo).map(x=> ThreadDungeonClearInfoFormat.fromJSON(x))
+		obj.ExpDungeonClearInfo = Object.values(json.ExpDungeonClearInfo).map(x=> ExpDungeonClearInfoFormat.fromJSON(x))
+		obj.ThreadDungeonClearInfo = Object.values(json.ThreadDungeonClearInfo).map(x=> ThreadDungeonClearInfoFormat.fromJSON(x))
+		return obj
+	}
+
+}
+
+class ResPacket_SkipThreadDungeon {
+	userExp?: number;
+	rewards?: Element[];
+	static fromJSON(json:any){
+		let obj = new ResPacket_SkipThreadDungeon()
+		obj.userExp = json.userExp
+		obj.rewards = Object.values(json.rewards).map(x=> Element.fromJSON(x))
+		return obj
+	}
+
+}
+
+class ResPacket_GetDailyLoginState {
+	weekid?: number;
+	id?: number;
+	rewardstates?: DailyLoginRewardStateFormat[];
+	static fromJSON(json:any){
+		let obj = new ResPacket_GetDailyLoginState()
+		obj.weekid = json.weekid
+		obj.id = json.id
+		obj.rewardstates = Object.values(json.rewardstates).map(x=> DailyLoginRewardStateFormat.fromJSON(x))
+		return obj
+	}
+
+}
+
+class ResPacket_AcquireDailyLoginReward {
+	rewards?: Element[];
+	static fromJSON(json:any){
+		let obj = new ResPacket_AcquireDailyLoginReward()
+		obj.rewards = Object.values(json.rewards).map(x=> Element.fromJSON(x))
+		return obj
+	}
+
+}
+
+class StoryDungeonSaveInfoFormat {
+	dungeonid?: number;
+	currentinfo?: StoryDungeonCurrentInfoFormat;
+	static fromJSON(json:any){
+		let obj = new StoryDungeonSaveInfoFormat()
+		obj.dungeonid = json.dungeonid
+		obj.currentinfo = StoryDungeonCurrentInfoFormat.fromJSON(json.currentinfo)
+		return obj
+	}
+
+}
+
+class ResPacket_GetStoryDungeonSaveInfo {
+	saveInfo?: StoryDungeonSaveInfoFormat;
+	SaveInfo?: StoryDungeonSaveInfoFormat;
+	static fromJSON(json:any){
+		let obj = new ResPacket_GetStoryDungeonSaveInfo()
+		obj.saveInfo = StoryDungeonSaveInfoFormat.fromJSON(json.saveInfo)
+		obj.SaveInfo = StoryDungeonSaveInfoFormat.fromJSON(json.SaveInfo)
+		return obj
+	}
+
+}
+
+class ReqPacket_EnterStoryDungeon {
+	mainchapterid?: number;
+	subchapterid?: number;
+	nodeid?: number;
+	stageid?: number;
+	personalities?: StoryDungeonSaveUnitInfoFormat[];
+	static fromJSON(json:any){
+		let obj = new ReqPacket_EnterStoryDungeon()
+		obj.mainchapterid = json.mainchapterid
+		obj.subchapterid = json.subchapterid
+		obj.nodeid = json.nodeid
+		obj.stageid = json.stageid
+		obj.personalities = Object.values(json.personalities).map(x=> StoryDungeonSaveUnitInfoFormat.fromJSON(x))
+		return obj
+	}
+
+}
+
+class ResPacket_EnterStoryDungeon {
+	saveInfo?: StoryDungeonSaveInfoFormat;
+	nodesRecord?: number[];
+	SaveInfo?: StoryDungeonSaveInfoFormat;
+	NodesRecord?: number[];
+	static fromJSON(json:any){
+		let obj = new ResPacket_EnterStoryDungeon()
+		obj.saveInfo = StoryDungeonSaveInfoFormat.fromJSON(json.saveInfo)
+		obj.nodesRecord = json.nodesRecord
+		obj.SaveInfo = StoryDungeonSaveInfoFormat.fromJSON(json.SaveInfo)
+		obj.NodesRecord = json.NodesRecord
+		return obj
+	}
+
+}
+
+class ResPacket_ReEnterStoryDungeon {
+	saveInfo?: StoryDungeonSaveInfoFormat;
+	nodesRecord?: number[];
+	statistics?: DungeonStatisticsDataFormat[];
+	SaveInfo?: StoryDungeonSaveInfoFormat;
+	NodesRecord?: number[];
+	Statistics?: DungeonStatisticsDataFormat[];
+	static fromJSON(json:any){
+		let obj = new ResPacket_ReEnterStoryDungeon()
+		obj.saveInfo = StoryDungeonSaveInfoFormat.fromJSON(json.saveInfo)
+		obj.nodesRecord = json.nodesRecord
+		obj.statistics = Object.values(json.statistics).map(x=> DungeonStatisticsDataFormat.fromJSON(x))
+		obj.SaveInfo = StoryDungeonSaveInfoFormat.fromJSON(json.SaveInfo)
+		obj.NodesRecord = json.NodesRecord
+		obj.Statistics = Object.values(json.Statistics).map(x=> DungeonStatisticsDataFormat.fromJSON(x))
+		return obj
+	}
+
+}
+
+class ResPacket_ExitStoryDungeonCommand {
+	saveInfo?: StoryDungeonSaveInfoFormat;
+	iswin?: boolean;
+	cleartype?: number;
+	addexptouser?: number;
+	personalityinfos?: StagePersonalityInfoFormat[];
+	expticket?: Element[];
+	rewarditem?: Element[];
+	exrewarditem?: Element[];
+	givebackstaminabyDefeat?: Element;
+	statistics?: DungeonStatisticsDataFormat[];
+	isGacksung?: boolean;
+	SaveInfo?: StoryDungeonSaveInfoFormat;
+	Statistics?: DungeonStatisticsDataFormat[];
+	IsGacksung?: boolean;
+	static fromJSON(json:any){
+		let obj = new ResPacket_ExitStoryDungeonCommand()
+		obj.saveInfo = StoryDungeonSaveInfoFormat.fromJSON(json.saveInfo)
+		obj.iswin = json.iswin
+		obj.cleartype = json.cleartype
+		obj.addexptouser = json.addexptouser
+		obj.personalityinfos = Object.values(json.personalityinfos).map(x=> StagePersonalityInfoFormat.fromJSON(x))
+		obj.expticket = Object.values(json.expticket).map(x=> Element.fromJSON(x))
+		obj.rewarditem = Object.values(json.rewarditem).map(x=> Element.fromJSON(x))
+		obj.exrewarditem = Object.values(json.exrewarditem).map(x=> Element.fromJSON(x))
+		obj.givebackstaminabyDefeat = Element.fromJSON(json.givebackstaminabyDefeat)
+		obj.statistics = Object.values(json.statistics).map(x=> DungeonStatisticsDataFormat.fromJSON(x))
+		obj.isGacksung = json.isGacksung
+		obj.SaveInfo = StoryDungeonSaveInfoFormat.fromJSON(json.SaveInfo)
+		obj.Statistics = Object.values(json.Statistics).map(x=> DungeonStatisticsDataFormat.fromJSON(x))
+		obj.IsGacksung = json.IsGacksung
+		return obj
+	}
+
+}
+
+class ResPacket_ExitStoryCommand {
+	rewarditem?: Element[];
+	exrewarditem?: Element[];
+	static fromJSON(json:any){
+		let obj = new ResPacket_ExitStoryCommand()
+		obj.rewarditem = Object.values(json.rewarditem).map(x=> Element.fromJSON(x))
+		obj.exrewarditem = Object.values(json.exrewarditem).map(x=> Element.fromJSON(x))
+		return obj
+	}
+
+}
+
+class GachaLogDetail {
+	type?: string;
+	_type?: ELEMENT_TYPE;
+	id?: number;
+	ex?: Element;
+	_origin?: Element;
+	Type?: ELEMENT_TYPE;
+	Id?: number;
+	static fromJSON(json:any){
+		let obj = new GachaLogDetail()
+		obj.type = json.type
+		obj._type = ELEMENT_TYPE.fromJSON(json._type)
+		obj.id = json.id
+		obj.ex = Element.fromJSON(json.ex)
+		obj._origin = Element.fromJSON(json._origin)
+		obj.Type = ELEMENT_TYPE.fromJSON(json.Type)
+		obj.Id = json.Id
+		return obj
+	}
+
+}
+
+class GachaLog {
+	gachaId?: number;
+	gachaDate?: string;
+	_gachaDate?: DateUtil;
+	paymentId?: number;
+	payments?: ItemFormat[];
+	gachaLogDetails?: GachaLogDetail[];
+	GachaId?: number;
+	GachaDate?: DateUtil;
+	PaymentId?: number;
+	Payments?: ItemFormat[];
+	GachaLogDetails?: GachaLogDetail[];
+	static fromJSON(json:any){
+		let obj = new GachaLog()
+		obj.gachaId = json.gachaId
+		obj.gachaDate = json.gachaDate
+		obj._gachaDate = DateUtil.fromJSON(json._gachaDate)
+		obj.paymentId = json.paymentId
+		obj.payments = Object.values(json.payments).map(x=> ItemFormat.fromJSON(x))
+		obj.gachaLogDetails = Object.values(json.gachaLogDetails).map(x=> GachaLogDetail.fromJSON(x))
+		obj.GachaId = json.GachaId
+		obj.GachaDate = DateUtil.fromJSON(json.GachaDate)
+		obj.PaymentId = json.PaymentId
+		obj.Payments = Object.values(json.Payments).map(x=> ItemFormat.fromJSON(x))
+		obj.GachaLogDetails = Object.values(json.GachaLogDetails).map(x=> GachaLogDetail.fromJSON(x))
+		return obj
+	}
+
+}
+
+class ResPacket_UseGachaPityPoint {
+	gachaLogDetails?: GachaLogDetail[];
+	static fromJSON(json:any){
+		let obj = new ResPacket_UseGachaPityPoint()
+		obj.gachaLogDetails = Object.values(json.gachaLogDetails).map(x=> GachaLogDetail.fromJSON(x))
+		return obj
+	}
+
+}
+
+class ResPacket_ClaimClosedGachaRewards {
+	pityPointDataList?: PityPoint[];
+	static fromJSON(json:any){
+		let obj = new ResPacket_ClaimClosedGachaRewards()
+		obj.pityPointDataList = Object.values(json.pityPointDataList).map(x=> PityPoint.fromJSON(x))
+		return obj
+	}
+
+}
+
+class ReqPacket_UseItem {
+	itemId?: number;
+	usage?: number;
+	targetIdx?: number;
+	target?: Element;
+	static fromJSON(json:any){
+		let obj = new ReqPacket_UseItem()
+		obj.itemId = json.itemId
+		obj.usage = json.usage
+		obj.targetIdx = json.targetIdx
+		obj.target = Element.fromJSON(json.target)
+		return obj
+	}
+
+}
+
+class ResPacket_UseItem {
+	pickedUpElementList?: Element[];
+	resultElementList?: Element[];
+	static fromJSON(json:any){
+		let obj = new ResPacket_UseItem()
+		obj.pickedUpElementList = Object.values(json.pickedUpElementList).map(x=> Element.fromJSON(x))
+		obj.resultElementList = Object.values(json.resultElementList).map(x=> Element.fromJSON(x))
+		return obj
+	}
+
+}
+
+class ReqPacket_UsePersonalityExpItem {
+	targetPersonalityId?: number;
+	items?: ItemFormat[];
+	static fromJSON(json:any){
+		let obj = new ReqPacket_UsePersonalityExpItem()
+		obj.targetPersonalityId = json.targetPersonalityId
+		obj.items = Object.values(json.items).map(x=> ItemFormat.fromJSON(x))
+		return obj
+	}
+
+}
+
+class UserPublicProfileWithSupportersFormat {
+	support_personalities?: SupportPersonalitySlotFormat[];
+	static fromJSON(json:any){
+		let obj = new UserPublicProfileWithSupportersFormat()
+		obj.support_personalities = Object.values(json.support_personalities).map(x=> SupportPersonalitySlotFormat.fromJSON(x))
+		return obj
+	}
+
+}
+
+class ResPacket_LoadUserDataAll {
+	secession_Date?: string;
+	_secessionDate?: DateUtil;
+	profile?: UserPublicProfileWithSupportersFormat;
+	isExistReceiveFriendRequest?: boolean;
+	danteNoteTodayPage?: number;
+	dailyLoginRewardStates?: DailyLoginRewardStateFormat[];
+	dailyLoginWeekId?: number;
+	dailyLoginId?: number;
+	showedWeekByMinistory?: number;
+	date?: string;
+	IsExistReceiveFriendRequest?: boolean;
+	SecessionDate?: DateUtil;
+	static fromJSON(json:any){
+		let obj = new ResPacket_LoadUserDataAll()
+		obj.secession_Date = json.secession_Date
+		obj._secessionDate = DateUtil.fromJSON(json._secessionDate)
+		obj.profile = UserPublicProfileWithSupportersFormat.fromJSON(json.profile)
+		obj.isExistReceiveFriendRequest = json.isExistReceiveFriendRequest
+		obj.danteNoteTodayPage = json.danteNoteTodayPage
+		obj.dailyLoginRewardStates = Object.values(json.dailyLoginRewardStates).map(x=> DailyLoginRewardStateFormat.fromJSON(x))
+		obj.dailyLoginWeekId = json.dailyLoginWeekId
+		obj.dailyLoginId = json.dailyLoginId
+		obj.showedWeekByMinistory = json.showedWeekByMinistory
+		obj.date = json.date
+		obj.IsExistReceiveFriendRequest = json.IsExistReceiveFriendRequest
+		obj.SecessionDate = DateUtil.fromJSON(json.SecessionDate)
+		return obj
+	}
+
+}
+
+class SeasonLogFormat {
+	seasonTo?: number;
+	seasonFrom?: number;
+	unreceivedBattlePassRewards?: Element[];
+	lostPieces?: ItemFormat[];
+	acquiredFromLostPieces?: ItemFormat[];
+	lostPackages?: ItemFormat[];
+	acquiredFromLostPackages?: ItemFormat[];
+	date?: string;
+	static fromJSON(json:any){
+		let obj = new SeasonLogFormat()
+		obj.seasonTo = json.seasonTo
+		obj.seasonFrom = json.seasonFrom
+		obj.unreceivedBattlePassRewards = Object.values(json.unreceivedBattlePassRewards).map(x=> Element.fromJSON(x))
+		obj.lostPieces = Object.values(json.lostPieces).map(x=> ItemFormat.fromJSON(x))
+		obj.acquiredFromLostPieces = Object.values(json.acquiredFromLostPieces).map(x=> ItemFormat.fromJSON(x))
+		obj.lostPackages = Object.values(json.lostPackages).map(x=> ItemFormat.fromJSON(x))
+		obj.acquiredFromLostPackages = Object.values(json.acquiredFromLostPackages).map(x=> ItemFormat.fromJSON(x))
+		obj.date = json.date
+		return obj
+	}
+
+}
+
+class ResPacket_CheckSeasonLog {
+	seasonLog?: SeasonLogFormat;
+	static fromJSON(json:any){
+		let obj = new ResPacket_CheckSeasonLog()
+		obj.seasonLog = SeasonLogFormat.fromJSON(json.seasonLog)
+		return obj
+	}
+
+}
+
+class LobbyCgDetailFormat {
+	id?: number;
+	g?: number;
+	static fromJSON(json:any){
+		let obj = new LobbyCgDetailFormat()
+		obj.id = json.id
+		obj.g = json.g
+		return obj
+	}
+
+}
+
+class MailFormat {
+	mail_id?: number;
+	sent_date?: string;
+	expiry_date?: string;
+	content_id?: number;
+	attachments?: Element[];
+	parameters?: string[];
+	static fromJSON(json:any){
+		let obj = new MailFormat()
+		obj.mail_id = json.mail_id
+		obj.sent_date = json.sent_date
+		obj.expiry_date = json.expiry_date
+		obj.content_id = json.content_id
+		obj.attachments = Object.values(json.attachments).map(x=> Element.fromJSON(x))
+		obj.parameters = json.parameters
+		return obj
+	}
+
+}
+
+class ResPacket_UnsealMails {
+	attachedElements?: Element[];
+	static fromJSON(json:any){
+		let obj = new ResPacket_UnsealMails()
+		obj.attachedElements = Object.values(json.attachedElements).map(x=> Element.fromJSON(x))
+		return obj
+	}
+
+}
+
+class MailLog {
+	maillog_id?: number;
+	sent_date?: string;
+	_sentDate?: DateUtil;
+	content_id?: number;
+	attachments?: Element[];
+	unsealed_date?: string;
+	_unsealedDate?: DateUtil;
+	parameters?: string[];
+	MailLogId?: number;
+	SentDate?: DateUtil;
+	ContentId?: number;
+	Attachments?: Element[];
+	UnsealedDate?: DateUtil;
+	static fromJSON(json:any){
+		let obj = new MailLog()
+		obj.maillog_id = json.maillog_id
+		obj.sent_date = json.sent_date
+		obj._sentDate = DateUtil.fromJSON(json._sentDate)
+		obj.content_id = json.content_id
+		obj.attachments = Object.values(json.attachments).map(x=> Element.fromJSON(x))
+		obj.unsealed_date = json.unsealed_date
+		obj._unsealedDate = DateUtil.fromJSON(json._unsealedDate)
+		obj.parameters = json.parameters
+		obj.MailLogId = json.MailLogId
+		obj.SentDate = DateUtil.fromJSON(json.SentDate)
+		obj.ContentId = json.ContentId
+		obj.Attachments = Object.values(json.Attachments).map(x=> Element.fromJSON(x))
+		obj.UnsealedDate = DateUtil.fromJSON(json.UnsealedDate)
+		return obj
+	}
+
+}
+
+class MirrorDungeonGetCharacterInfoFormat {
+	pid?: number;
+	egos?: DungeonEgoFormat[];
+	static fromJSON(json:any){
+		let obj = new MirrorDungeonGetCharacterInfoFormat()
+		obj.pid = json.pid
+		obj.egos = Object.values(json.egos).map(x=> DungeonEgoFormat.fromJSON(x))
+		return obj
+	}
+
+}
+
+class MirrorDungeonFormationEgoFormat {
+	prevEgoId?: number;
+	nextEgoId?: number;
+	static fromJSON(json:any){
+		let obj = new MirrorDungeonFormationEgoFormat()
+		obj.prevEgoId = json.prevEgoId
+		obj.nextEgoId = json.nextEgoId
+		return obj
+	}
+
+}
+
+class ReqPacket_UpdateMirrorDungeonMapNodeCommand {
+	currentnode?: DungeonMapNodeFormat;
+	choiceEventData?: DungeonChoiceEventSaveDataFormat;
+	dungeonUnitList?: MirrorDungeonSaveUnitInfoFormat[];
+	updatedEgoGifts?: DungeonMapEgoGiftFormat[];
+	static fromJSON(json:any){
+		let obj = new ReqPacket_UpdateMirrorDungeonMapNodeCommand()
+		obj.currentnode = DungeonMapNodeFormat.fromJSON(json.currentnode)
+		obj.choiceEventData = DungeonChoiceEventSaveDataFormat.fromJSON(json.choiceEventData)
+		obj.dungeonUnitList = Object.values(json.dungeonUnitList).map(x=> MirrorDungeonSaveUnitInfoFormat.fromJSON(x))
+		obj.updatedEgoGifts = Object.values(json.updatedEgoGifts).map(x=> DungeonMapEgoGiftFormat.fromJSON(x))
+		return obj
+	}
+
+}
+
+class ReqPacket_AcquireCharacterEventDataMirrorDungeonCommand {
+	acquirePersonalities?: MirrorDungeonGetCharacterInfoFormat[];
+	static fromJSON(json:any){
+		let obj = new ReqPacket_AcquireCharacterEventDataMirrorDungeonCommand()
+		obj.acquirePersonalities = Object.values(json.acquirePersonalities).map(x=> MirrorDungeonGetCharacterInfoFormat.fromJSON(x))
+		return obj
+	}
+
+}
+
+class RandomDungeonLevelUpPersonalityInfoFormat {
+	pid?: number;
+	ego?: DungeonEgoFormat;
+	static fromJSON(json:any){
+		let obj = new RandomDungeonLevelUpPersonalityInfoFormat()
+		obj.pid = json.pid
+		obj.ego = DungeonEgoFormat.fromJSON(json.ego)
+		return obj
+	}
+
+}
+
+class ReqPacket_PersonalityLevelUpEventMirrorDungeonCommand {
+	levelUpPersonalityFormat?: RandomDungeonLevelUpPersonalityInfoFormat;
+	static fromJSON(json:any){
+		let obj = new ReqPacket_PersonalityLevelUpEventMirrorDungeonCommand()
+		obj.levelUpPersonalityFormat = RandomDungeonLevelUpPersonalityInfoFormat.fromJSON(json.levelUpPersonalityFormat)
+		return obj
+	}
+
+}
+
+class FormationDetailFormat {
+	personalityId?: number;
+	egos?: number[];
+	isParticipated?: boolean;
+	participationOrder?: number;
+	static fromJSON(json:any){
+		let obj = new FormationDetailFormat()
+		obj.personalityId = json.personalityId
+		obj.egos = json.egos
+		obj.isParticipated = json.isParticipated
+		obj.participationOrder = json.participationOrder
+		return obj
+	}
+
+}
+
+class ResPacket_GetUserBanners {
+	banners?: UserBannerDataFormat[];
+	static fromJSON(json:any){
+		let obj = new ResPacket_GetUserBanners()
+		obj.banners = Object.values(json.banners).map(x=> UserBannerDataFormat.fromJSON(x))
+		return obj
+	}
+
+}
+
+class UserPublicProfileFormat {
+	public_uid?: string;
+	illust_id?: number;
+	illust_gacksung_level?: number;
+	leftborder_id?: number;
+	rightborder_id?: number;
+	egobackground_id?: number;
+	sentence_id?: number;
+	word_id?: number;
+	banners?: UserPublicBannerFormat[];
+	level?: number;
+	date?: string;
+	static fromJSON(json:any){
+		let obj = new UserPublicProfileFormat()
+		obj.public_uid = json.public_uid
+		obj.illust_id = json.illust_id
+		obj.illust_gacksung_level = json.illust_gacksung_level
+		obj.leftborder_id = json.leftborder_id
+		obj.rightborder_id = json.rightborder_id
+		obj.egobackground_id = json.egobackground_id
+		obj.sentence_id = json.sentence_id
+		obj.word_id = json.word_id
+		obj.banners = Object.values(json.banners).map(x=> UserPublicBannerFormat.fromJSON(x))
+		obj.level = json.level
+		obj.date = json.date
+		return obj
+	}
+
+}
+
+class ResPacket_FindFriend {
+	success?: boolean;
+	friendprofile?: UserPublicProfileFormat;
+	static fromJSON(json:any){
+		let obj = new ResPacket_FindFriend()
+		obj.success = json.success
+		obj.friendprofile = UserPublicProfileFormat.fromJSON(json.friendprofile)
+		return obj
+	}
+
+}
+
+class ResPacket_GetRecommendFriends {
+	recomendedFriends?: UserPublicProfileFormat[];
+	static fromJSON(json:any){
+		let obj = new ResPacket_GetRecommendFriends()
+		obj.recomendedFriends = Object.values(json.recomendedFriends).map(x=> UserPublicProfileFormat.fromJSON(x))
+		return obj
+	}
+
+}
+
+class ResPacket_SendFriendRequest {
+	success?: number;
+	receiverprofile?: UserPublicProfileFormat;
+	static fromJSON(json:any){
+		let obj = new ResPacket_SendFriendRequest()
+		obj.success = json.success
+		obj.receiverprofile = UserPublicProfileFormat.fromJSON(json.receiverprofile)
+		return obj
+	}
+
+}
+
+class ResPacket_GetFriendSupportPersonalities {
+	supportpersonalities?: SupportPersonalitySlotFormat[];
+	static fromJSON(json:any){
+		let obj = new ResPacket_GetFriendSupportPersonalities()
+		obj.supportpersonalities = Object.values(json.supportpersonalities).map(x=> SupportPersonalitySlotFormat.fromJSON(x))
+		return obj
+	}
+
+}
+
+class ProfileEgoContainIndexFormat {
+	idx?: number;
+	static fromJSON(json:any){
+		let obj = new ProfileEgoContainIndexFormat()
+		obj.idx = json.idx
+		return obj
+	}
+
+}
+
+class ReqPacket_UpdateUserProfile {
+	illustId?: number;
+	illustGacksungLevel?: number;
+	sentenceId?: number;
+	wordId?: number;
+	banners?: UserPublicBannerFormat[];
+	supportPersonalities?: SupportPersonalitySlotFormat[];
+	static fromJSON(json:any){
+		let obj = new ReqPacket_UpdateUserProfile()
+		obj.illustId = json.illustId
+		obj.illustGacksungLevel = json.illustGacksungLevel
+		obj.sentenceId = json.sentenceId
+		obj.wordId = json.wordId
+		obj.banners = Object.values(json.banners).map(x=> UserPublicBannerFormat.fromJSON(x))
+		obj.supportPersonalities = Object.values(json.supportPersonalities).map(x=> SupportPersonalitySlotFormat.fromJSON(x))
+		return obj
+	}
+
+}
+
+class ResPacket_GetProfileTicketDecoDatas {
+	leftBorders?: UserProfileBorderFormat[];
+	rightBorders?: UserProfileBorderFormat[];
+	egoBackgrounds?: UserProfileEgobackgroundFormat[];
+	static fromJSON(json:any){
+		let obj = new ResPacket_GetProfileTicketDecoDatas()
+		obj.leftBorders = Object.values(json.leftBorders).map(x=> UserProfileBorderFormat.fromJSON(x))
+		obj.rightBorders = Object.values(json.rightBorders).map(x=> UserProfileBorderFormat.fromJSON(x))
+		obj.egoBackgrounds = Object.values(json.egoBackgrounds).map(x=> UserProfileEgobackgroundFormat.fromJSON(x))
+		return obj
+	}
+
+}
+
+class RailwayUnitInfoFormat {
+	pid?: number;
+	g?: number;
+	l?: number;
+	es?: DungeonEgoFormat[];
+	sp?: number;
+	gi?: number;
+	IsFriendSupport?: boolean;
+	IsGacksungIllust?: boolean;
+	static fromJSON(json:any){
+		let obj = new RailwayUnitInfoFormat()
+		obj.pid = json.pid
+		obj.g = json.g
+		obj.l = json.l
+		obj.es = Object.values(json.es).map(x=> DungeonEgoFormat.fromJSON(x))
+		obj.sp = json.sp
+		obj.gi = json.gi
+		obj.IsFriendSupport = json.IsFriendSupport
+		obj.IsGacksungIllust = json.IsGacksungIllust
+		return obj
+	}
+
+}
+
+class RailwayNodeDataFormat {
+	nodeid?: number;
+	egostocks?: RailwayEGOStockFormat[];
+	status?: RailwayUnitStatusFormat[];
+	clearturn?: number;
+	statistics?: RailwayStatisticsDataFormat[];
+	static fromJSON(json:any){
+		let obj = new RailwayNodeDataFormat()
+		obj.nodeid = json.nodeid
+		obj.egostocks = Object.values(json.egostocks).map(x=> RailwayEGOStockFormat.fromJSON(x))
+		obj.status = Object.values(json.status).map(x=> RailwayUnitStatusFormat.fromJSON(x))
+		obj.clearturn = json.clearturn
+		obj.statistics = Object.values(json.statistics).map(x=> RailwayStatisticsDataFormat.fromJSON(x))
+		return obj
+	}
+
+}
+
+class RailwayTurnsPerNode {
+	nid?: number;
+	turn?: number;
+	static fromJSON(json:any){
+		let obj = new RailwayTurnsPerNode()
+		obj.nid = json.nid
+		obj.turn = json.turn
+		return obj
+	}
+
+}
+
+class HellsChickenDungeonGetCharacterInfoFormat {
+	pid?: number;
+	egos?: DungeonEgoFormat[];
+	sp?: number;
+	static fromJSON(json:any){
+		let obj = new HellsChickenDungeonGetCharacterInfoFormat()
+		obj.pid = json.pid
+		obj.egos = Object.values(json.egos).map(x=> DungeonEgoFormat.fromJSON(x))
+		obj.sp = json.sp
+		return obj
+	}
+
+}
+
+class RandomDungeonMapFormat {
+	ns?: RandomDungeonMapNodeFormatForMapFormat[];
+	static fromJSON(json:any){
+		let obj = new RandomDungeonMapFormat()
+		obj.ns = Object.values(json.ns).map(x=> RandomDungeonMapNodeFormatForMapFormat.fromJSON(x))
+		return obj
+	}
+
+}
+
+class ReqPacket_UpdateHellsChickenDungeonCommand {
+	characterInfos?: HellsChickenDungeonGetCharacterInfoContainGacksungFormat[];
+	map?: RandomDungeonMapFormat;
+	choiceEventList?: number[];
+	static fromJSON(json:any){
+		let obj = new ReqPacket_UpdateHellsChickenDungeonCommand()
+		obj.characterInfos = Object.values(json.characterInfos).map(x=> HellsChickenDungeonGetCharacterInfoContainGacksungFormat.fromJSON(x))
+		obj.map = RandomDungeonMapFormat.fromJSON(json.map)
+		obj.choiceEventList = json.choiceEventList
+		return obj
+	}
+
+}
+
+class AbnormalityUnlockInformationFormat {
+	id?: number;
+	k?: number;
+	s?: number[];
+	p?: number[];
+	ps?: PartResistFormat[];
+	static fromJSON(json:any){
+		let obj = new AbnormalityUnlockInformationFormat()
+		obj.id = json.id
+		obj.k = json.k
+		obj.s = json.s
+		obj.p = json.p
+		obj.ps = Object.values(json.ps).map(x=> PartResistFormat.fromJSON(x))
+		return obj
+	}
+
+}
+
+class ResPacket_EnterHellsChickendungeonMapNodeBattleAfterChoice {
+	abnormalityLogs?: AbnormalityUnlockInformationFormat[];
+	AbnormalityLogs?: AbnormalityUnlockInformationFormat[];
+	static fromJSON(json:any){
+		let obj = new ResPacket_EnterHellsChickendungeonMapNodeBattleAfterChoice()
+		obj.abnormalityLogs = Object.values(json.abnormalityLogs).map(x=> AbnormalityUnlockInformationFormat.fromJSON(x))
+		obj.AbnormalityLogs = Object.values(json.AbnormalityLogs).map(x=> AbnormalityUnlockInformationFormat.fromJSON(x))
+		return obj
+	}
+
+}
+
+class ReqPacket_ExitHellsChickenDungeonMapNodeCommand {
+	dungeonunitlist?: HellsChickenDungeonSaveUnitInfoFormat[];
+	noderesult?: number;
+	choiceEventData?: DungeonChoiceEventSaveDataFormat;
+	battlePassParameters?: BattlePassParameterFormat;
+	abnormalityLogs?: AbnormalityUnlockInformationFormat[];
+	isupdatedEgoSkillStock?: number;
+	egoSkillStockList?: DungeonEgoSkillStockFormat[];
+	updatedEgoGifts?: DungeonMapEgoGiftFormat[];
+	statistics?: DungeonStatisticsDataFormat[];
+	static fromJSON(json:any){
+		let obj = new ReqPacket_ExitHellsChickenDungeonMapNodeCommand()
+		obj.dungeonunitlist = Object.values(json.dungeonunitlist).map(x=> HellsChickenDungeonSaveUnitInfoFormat.fromJSON(x))
+		obj.noderesult = json.noderesult
+		obj.choiceEventData = DungeonChoiceEventSaveDataFormat.fromJSON(json.choiceEventData)
+		obj.battlePassParameters = BattlePassParameterFormat.fromJSON(json.battlePassParameters)
+		obj.abnormalityLogs = Object.values(json.abnormalityLogs).map(x=> AbnormalityUnlockInformationFormat.fromJSON(x))
+		obj.isupdatedEgoSkillStock = json.isupdatedEgoSkillStock
+		obj.egoSkillStockList = Object.values(json.egoSkillStockList).map(x=> DungeonEgoSkillStockFormat.fromJSON(x))
+		obj.updatedEgoGifts = Object.values(json.updatedEgoGifts).map(x=> DungeonMapEgoGiftFormat.fromJSON(x))
+		obj.statistics = Object.values(json.statistics).map(x=> DungeonStatisticsDataFormat.fromJSON(x))
+		return obj
+	}
+
+}
+
+class ResPacket_ExitHellsChickenDungeonMapNodeCommand {
+	currentInfo?: HellsChickenDungeonCurrentInfoFormat;
+	abnormalityLogs?: AbnormalityUnlockInformationFormat[];
+	CurrentInfo?: HellsChickenDungeonCurrentInfoFormat;
+	AbnormalityLogs?: AbnormalityUnlockInformationFormat[];
+	static fromJSON(json:any){
+		let obj = new ResPacket_ExitHellsChickenDungeonMapNodeCommand()
+		obj.currentInfo = HellsChickenDungeonCurrentInfoFormat.fromJSON(json.currentInfo)
+		obj.abnormalityLogs = Object.values(json.abnormalityLogs).map(x=> AbnormalityUnlockInformationFormat.fromJSON(x))
+		obj.CurrentInfo = HellsChickenDungeonCurrentInfoFormat.fromJSON(json.CurrentInfo)
+		obj.AbnormalityLogs = Object.values(json.AbnormalityLogs).map(x=> AbnormalityUnlockInformationFormat.fromJSON(x))
+		return obj
+	}
+
+}
+
+class ReqPacket_AcquireCharacterEventDataHellsChickenDungeonCommand {
+	acquirePersonalities?: HellsChickenDungeonGetCharacterInfoFormat[];
+	static fromJSON(json:any){
+		let obj = new ReqPacket_AcquireCharacterEventDataHellsChickenDungeonCommand()
+		obj.acquirePersonalities = Object.values(json.acquirePersonalities).map(x=> HellsChickenDungeonGetCharacterInfoFormat.fromJSON(x))
+		return obj
+	}
+
+}
+
+class ResPacket_EnterThreadDungeon {
+	isClear?: number;
+	abnormalityLogs?: AbnormalityUnlockInformationFormat[];
+	static fromJSON(json:any){
+		let obj = new ResPacket_EnterThreadDungeon()
+		obj.isClear = json.isClear
+		obj.abnormalityLogs = Object.values(json.abnormalityLogs).map(x=> AbnormalityUnlockInformationFormat.fromJSON(x))
+		return obj
+	}
+
+}
+
+class ReqPacket_ExitThreadDungeon {
+	isWin?: number;
+	battlePassParameters?: BattlePassParameterFormat;
+	abnormalityLogs?: AbnormalityUnlockInformationFormat[];
+	static fromJSON(json:any){
+		let obj = new ReqPacket_ExitThreadDungeon()
+		obj.isWin = json.isWin
+		obj.battlePassParameters = BattlePassParameterFormat.fromJSON(json.battlePassParameters)
+		obj.abnormalityLogs = Object.values(json.abnormalityLogs).map(x=> AbnormalityUnlockInformationFormat.fromJSON(x))
+		return obj
+	}
+
+}
+
+class ResPacket_GetStageProgressRateRewardCommand {
+	rewardList?: Element[];
+	Reward?: Element[];
+	static fromJSON(json:any){
+		let obj = new ResPacket_GetStageProgressRateRewardCommand()
+		obj.rewardList = Object.values(json.rewardList).map(x=> Element.fromJSON(x))
+		obj.Reward = Object.values(json.Reward).map(x=> Element.fromJSON(x))
+		return obj
+	}
+
+}
+
+class ResPacket_EnterStageBattleCommand {
+	abnormalityLogs?: AbnormalityUnlockInformationFormat[];
+	AbnormalityLogs?: AbnormalityUnlockInformationFormat[];
+	static fromJSON(json:any){
+		let obj = new ResPacket_EnterStageBattleCommand()
+		obj.abnormalityLogs = Object.values(json.abnormalityLogs).map(x=> AbnormalityUnlockInformationFormat.fromJSON(x))
+		obj.AbnormalityLogs = Object.values(json.AbnormalityLogs).map(x=> AbnormalityUnlockInformationFormat.fromJSON(x))
+		return obj
+	}
+
+}
+
+class ReqPacket_ExitStageBattleCommand {
+	mainchapterid?: number;
+	subchapterid?: number;
+	nodeid?: number;
+	stageid?: number;
+	iswin?: boolean;
+	turn?: number;
+	formationid?: number;
+	battlePassParameters?: BattlePassParameterFormat;
+	supportCharacterId?: number;
+	supportPersonalityId?: number;
+	supportEgoIds?: number[];
+	supportParticipate?: boolean;
+	abnormalityLogs?: AbnormalityUnlockInformationFormat[];
+	static fromJSON(json:any){
+		let obj = new ReqPacket_ExitStageBattleCommand()
+		obj.mainchapterid = json.mainchapterid
+		obj.subchapterid = json.subchapterid
+		obj.nodeid = json.nodeid
+		obj.stageid = json.stageid
+		obj.iswin = json.iswin
+		obj.turn = json.turn
+		obj.formationid = json.formationid
+		obj.battlePassParameters = BattlePassParameterFormat.fromJSON(json.battlePassParameters)
+		obj.supportCharacterId = json.supportCharacterId
+		obj.supportPersonalityId = json.supportPersonalityId
+		obj.supportEgoIds = json.supportEgoIds
+		obj.supportParticipate = json.supportParticipate
+		obj.abnormalityLogs = Object.values(json.abnormalityLogs).map(x=> AbnormalityUnlockInformationFormat.fromJSON(x))
+		return obj
+	}
+
+}
+
+class ResPacket_ExitStageBattleCommand {
+	stageid?: number;
+	iswin?: boolean;
+	cleartype?: number;
+	addexptouser?: number;
+	personalityinfos?: StagePersonalityInfoFormat[];
+	expticket?: Element[];
+	rewarditem?: Element[];
+	exrewarditem?: Element[];
+	givebackstaminabyDefeat?: Element;
+	abnormalityLogs?: AbnormalityUnlockInformationFormat[];
+	AbnormalityLogs?: AbnormalityUnlockInformationFormat[];
+	static fromJSON(json:any){
+		let obj = new ResPacket_ExitStageBattleCommand()
+		obj.stageid = json.stageid
+		obj.iswin = json.iswin
+		obj.cleartype = json.cleartype
+		obj.addexptouser = json.addexptouser
+		obj.personalityinfos = Object.values(json.personalityinfos).map(x=> StagePersonalityInfoFormat.fromJSON(x))
+		obj.expticket = Object.values(json.expticket).map(x=> Element.fromJSON(x))
+		obj.rewarditem = Object.values(json.rewarditem).map(x=> Element.fromJSON(x))
+		obj.exrewarditem = Object.values(json.exrewarditem).map(x=> Element.fromJSON(x))
+		obj.givebackstaminabyDefeat = Element.fromJSON(json.givebackstaminabyDefeat)
+		obj.abnormalityLogs = Object.values(json.abnormalityLogs).map(x=> AbnormalityUnlockInformationFormat.fromJSON(x))
+		obj.AbnormalityLogs = Object.values(json.AbnormalityLogs).map(x=> AbnormalityUnlockInformationFormat.fromJSON(x))
+		return obj
+	}
+
+}
+
+class MirrorDungeonSaveInfoFormat {
+	dungeonId?: number;
+	idx?: number;
+	currentInfo?: MirrorDungeonCurrentInfoFormat;
+	dungeonMap?: RandomDungeonMapFormat;
+	choiceEventList?: number[];
+	addUserExp?: number;
+	statistics?: DungeonStatisticsDataFormat[];
+	encounterstatistics?: number[];
+	isEndDungeon?: number;
+	isReset?: number;
+	availableweeklychance?: number;
+	availablehardrewardchance?: number;
+	version?: number;
+	static fromJSON(json:any){
+		let obj = new MirrorDungeonSaveInfoFormat()
+		obj.dungeonId = json.dungeonId
+		obj.idx = json.idx
+		obj.currentInfo = MirrorDungeonCurrentInfoFormat.fromJSON(json.currentInfo)
+		obj.dungeonMap = RandomDungeonMapFormat.fromJSON(json.dungeonMap)
+		obj.choiceEventList = json.choiceEventList
+		obj.addUserExp = json.addUserExp
+		obj.statistics = Object.values(json.statistics).map(x=> DungeonStatisticsDataFormat.fromJSON(x))
+		obj.encounterstatistics = json.encounterstatistics
+		obj.isEndDungeon = json.isEndDungeon
+		obj.isReset = json.isReset
+		obj.availableweeklychance = json.availableweeklychance
+		obj.availablehardrewardchance = json.availablehardrewardchance
+		obj.version = json.version
+		return obj
+	}
+
+}
+
+class RailwayDungeonSaveInfoFormat {
+	id?: number;
+	currentclearnode?: number;
+	lastclearnode?: number;
+	personalities?: RailwayUnitInfoFormat[];
+	payreward?: number;
+	rewardstate?: number;
+	firstcleardate?: DateUtil;
+	IsPayReward?: boolean;
+	static fromJSON(json:any){
+		let obj = new RailwayDungeonSaveInfoFormat()
+		obj.id = json.id
+		obj.currentclearnode = json.currentclearnode
+		obj.lastclearnode = json.lastclearnode
+		obj.personalities = Object.values(json.personalities).map(x=> RailwayUnitInfoFormat.fromJSON(x))
+		obj.payreward = json.payreward
+		obj.rewardstate = json.rewardstate
+		obj.firstcleardate = DateUtil.fromJSON(json.firstcleardate)
+		obj.IsPayReward = json.IsPayReward
+		return obj
+	}
+
+}
+
+class ResPacket_EnterStoryDungeonMapNodeCommand {
+	node?: DungeonMapNodeFormat;
+	nr?: number;
+	abnormalityLogs?: AbnormalityUnlockInformationFormat[];
+	Node?: DungeonMapNodeFormat;
+	NodeResult?: number;
+	AbnormalityLogs?: AbnormalityUnlockInformationFormat[];
+	static fromJSON(json:any){
+		let obj = new ResPacket_EnterStoryDungeonMapNodeCommand()
+		obj.node = DungeonMapNodeFormat.fromJSON(json.node)
+		obj.nr = json.nr
+		obj.abnormalityLogs = Object.values(json.abnormalityLogs).map(x=> AbnormalityUnlockInformationFormat.fromJSON(x))
+		obj.Node = DungeonMapNodeFormat.fromJSON(json.Node)
+		obj.NodeResult = json.NodeResult
+		obj.AbnormalityLogs = Object.values(json.AbnormalityLogs).map(x=> AbnormalityUnlockInformationFormat.fromJSON(x))
+		return obj
+	}
+
+}
+
+class ResPacket_EnterStoryDungeonMapNodeBattleAfterChoice {
+	abnormalityLogs?: AbnormalityUnlockInformationFormat[];
+	isAllDie?: number;
+	AbnormalityLogs?: AbnormalityUnlockInformationFormat[];
+	IsAllDie?: number;
+	static fromJSON(json:any){
+		let obj = new ResPacket_EnterStoryDungeonMapNodeBattleAfterChoice()
+		obj.abnormalityLogs = Object.values(json.abnormalityLogs).map(x=> AbnormalityUnlockInformationFormat.fromJSON(x))
+		obj.isAllDie = json.isAllDie
+		obj.AbnormalityLogs = Object.values(json.AbnormalityLogs).map(x=> AbnormalityUnlockInformationFormat.fromJSON(x))
+		obj.IsAllDie = json.IsAllDie
+		return obj
+	}
+
+}
+
+class ReqPacket_ExitStoryDungeonMapNodeCommand {
+	noderesult?: number;
+	choiceEventData?: DungeonChoiceEventSaveDataFormat;
+	dungeonunitlist?: StoryDungeonSaveUnitInfoFormat[];
+	battlePassParameters?: BattlePassParameterFormat;
+	abnormalityLogs?: AbnormalityUnlockInformationFormat[];
+	openedNode?: number;
+	isupdatedEgoSkillStock?: number;
+	egoSkillStockList?: DungeonEgoSkillStockFormat[];
+	updatedEgoGifts?: DungeonMapEgoGiftFormat[];
+	statistics?: DungeonStatisticsDataFormat[];
+	static fromJSON(json:any){
+		let obj = new ReqPacket_ExitStoryDungeonMapNodeCommand()
+		obj.noderesult = json.noderesult
+		obj.choiceEventData = DungeonChoiceEventSaveDataFormat.fromJSON(json.choiceEventData)
+		obj.dungeonunitlist = Object.values(json.dungeonunitlist).map(x=> StoryDungeonSaveUnitInfoFormat.fromJSON(x))
+		obj.battlePassParameters = BattlePassParameterFormat.fromJSON(json.battlePassParameters)
+		obj.abnormalityLogs = Object.values(json.abnormalityLogs).map(x=> AbnormalityUnlockInformationFormat.fromJSON(x))
+		obj.openedNode = json.openedNode
+		obj.isupdatedEgoSkillStock = json.isupdatedEgoSkillStock
+		obj.egoSkillStockList = Object.values(json.egoSkillStockList).map(x=> DungeonEgoSkillStockFormat.fromJSON(x))
+		obj.updatedEgoGifts = Object.values(json.updatedEgoGifts).map(x=> DungeonMapEgoGiftFormat.fromJSON(x))
+		obj.statistics = Object.values(json.statistics).map(x=> DungeonStatisticsDataFormat.fromJSON(x))
+		return obj
+	}
+
+}
+
+class ResPacket_ExitStoryDungeonMapNodeCommand {
+	saveInfo?: StoryDungeonSaveInfoFormat;
+	abnormalityLogs?: AbnormalityUnlockInformationFormat[];
+	acquiredEgogifts?: DungeonMapEgoGiftFormat[];
+	isAllDie?: number;
+	SaveInfo?: StoryDungeonSaveInfoFormat;
+	AbnormalityLogs?: AbnormalityUnlockInformationFormat[];
+	AcquiredEgogifts?: DungeonMapEgoGiftFormat[];
+	IsAllDie?: number;
+	static fromJSON(json:any){
+		let obj = new ResPacket_ExitStoryDungeonMapNodeCommand()
+		obj.saveInfo = StoryDungeonSaveInfoFormat.fromJSON(json.saveInfo)
+		obj.abnormalityLogs = Object.values(json.abnormalityLogs).map(x=> AbnormalityUnlockInformationFormat.fromJSON(x))
+		obj.acquiredEgogifts = Object.values(json.acquiredEgogifts).map(x=> DungeonMapEgoGiftFormat.fromJSON(x))
+		obj.isAllDie = json.isAllDie
+		obj.SaveInfo = StoryDungeonSaveInfoFormat.fromJSON(json.SaveInfo)
+		obj.AbnormalityLogs = Object.values(json.AbnormalityLogs).map(x=> AbnormalityUnlockInformationFormat.fromJSON(x))
+		obj.AcquiredEgogifts = Object.values(json.AcquiredEgogifts).map(x=> DungeonMapEgoGiftFormat.fromJSON(x))
+		obj.IsAllDie = json.IsAllDie
+		return obj
+	}
+
+}
+
+class ResPacket_GetAbnormalityLogData {
+	logdatas?: AbnormalityUnlockInformationFormat[];
+	AbnormalityLogs?: AbnormalityUnlockInformationFormat[];
+	static fromJSON(json:any){
+		let obj = new ResPacket_GetAbnormalityLogData()
+		obj.logdatas = Object.values(json.logdatas).map(x=> AbnormalityUnlockInformationFormat.fromJSON(x))
+		obj.AbnormalityLogs = Object.values(json.AbnormalityLogs).map(x=> AbnormalityUnlockInformationFormat.fromJSON(x))
+		return obj
+	}
+
+}
+
+class ReqPacket_UpdateAbnormalityLogData {
+	battlePassParameters?: BattlePassParameterFormat;
+	abnormalityLogs?: AbnormalityUnlockInformationFormat[];
+	static fromJSON(json:any){
+		let obj = new ReqPacket_UpdateAbnormalityLogData()
+		obj.battlePassParameters = BattlePassParameterFormat.fromJSON(json.battlePassParameters)
+		obj.abnormalityLogs = Object.values(json.abnormalityLogs).map(x=> AbnormalityUnlockInformationFormat.fromJSON(x))
+		return obj
+	}
+
+}
+
+class ResPacket_UpdateAbnormalityLogData {
+	abnormalityLogs?: AbnormalityUnlockInformationFormat[];
+	AbnormalityLogs?: AbnormalityUnlockInformationFormat[];
+	static fromJSON(json:any){
+		let obj = new ResPacket_UpdateAbnormalityLogData()
+		obj.abnormalityLogs = Object.values(json.abnormalityLogs).map(x=> AbnormalityUnlockInformationFormat.fromJSON(x))
+		obj.AbnormalityLogs = Object.values(json.AbnormalityLogs).map(x=> AbnormalityUnlockInformationFormat.fromJSON(x))
+		return obj
+	}
+
+}
+
+class ResPacket_PlayGacha {
+	gachaLogDetails?: GachaLogDetail[];
+	static fromJSON(json:any){
+		let obj = new ResPacket_PlayGacha()
+		obj.gachaLogDetails = Object.values(json.gachaLogDetails).map(x=> GachaLogDetail.fromJSON(x))
+		return obj
+	}
+
+}
+
+class ResPacket_GetGachaLogAll {
+	gachaLogs?: GachaLog[];
+	static fromJSON(json:any){
+		let obj = new ResPacket_GetGachaLogAll()
+		obj.gachaLogs = Object.values(json.gachaLogs).map(x=> GachaLog.fromJSON(x))
+		return obj
+	}
+
+}
+
+class LobbyCgFormat {
+	characterId?: number;
+	lobbycgdetails?: LobbyCgDetailFormat[];
+	static fromJSON(json:any){
+		let obj = new LobbyCgFormat()
+		obj.characterId = json.characterId
+		obj.lobbycgdetails = Object.values(json.lobbycgdetails).map(x=> LobbyCgDetailFormat.fromJSON(x))
+		return obj
+	}
+
+}
+
+class ReqPacket_LobbyCgCommand {
+	lobbyCg?: LobbyCgFormat;
+	static fromJSON(json:any){
+		let obj = new ReqPacket_LobbyCgCommand()
+		obj.lobbyCg = LobbyCgFormat.fromJSON(json.lobbyCg)
+		return obj
+	}
+
+}
+
+class ResPacket_RefreshMailbox {
+	initializedMailList?: MailFormat[];
+	static fromJSON(json:any){
+		let obj = new ResPacket_RefreshMailbox()
+		obj.initializedMailList = Object.values(json.initializedMailList).map(x=> MailFormat.fromJSON(x))
+		return obj
+	}
+
+}
+
+class ResPacket_GetMailLogAll {
+	mailLogs?: MailLog[];
+	static fromJSON(json:any){
+		let obj = new ResPacket_GetMailLogAll()
+		obj.mailLogs = Object.values(json.mailLogs).map(x=> MailLog.fromJSON(x))
+		return obj
+	}
+
+}
+
+class ResPacket_GetMirrorDungeonSaveInfoAll {
+	originSaveInfo?: MirrorDungeonSaveInfoFormat;
+	simulationsaveInfo?: MirrorDungeonSaveInfoFormat;
+	static fromJSON(json:any){
+		let obj = new ResPacket_GetMirrorDungeonSaveInfoAll()
+		obj.originSaveInfo = MirrorDungeonSaveInfoFormat.fromJSON(json.originSaveInfo)
+		obj.simulationsaveInfo = MirrorDungeonSaveInfoFormat.fromJSON(json.simulationsaveInfo)
+		return obj
+	}
+
+}
+
+class ResPacket_GetMirrorDungeonSaveInfo {
+	saveInfo?: MirrorDungeonSaveInfoFormat;
+	static fromJSON(json:any){
+		let obj = new ResPacket_GetMirrorDungeonSaveInfo()
+		obj.saveInfo = MirrorDungeonSaveInfoFormat.fromJSON(json.saveInfo)
+		return obj
+	}
+
+}
+
+class ResPacket_EnterMirrorDungeonCommand {
+	saveInfo?: MirrorDungeonSaveInfoFormat;
+	recentCharacterList?: MirrorDungeonGetCharacterInfoFormat[];
+	SaveInfo?: MirrorDungeonSaveInfoFormat;
+	RecentCharacterList?: MirrorDungeonGetCharacterInfoFormat[];
+	static fromJSON(json:any){
+		let obj = new ResPacket_EnterMirrorDungeonCommand()
+		obj.saveInfo = MirrorDungeonSaveInfoFormat.fromJSON(json.saveInfo)
+		obj.recentCharacterList = Object.values(json.recentCharacterList).map(x=> MirrorDungeonGetCharacterInfoFormat.fromJSON(x))
+		obj.SaveInfo = MirrorDungeonSaveInfoFormat.fromJSON(json.SaveInfo)
+		obj.RecentCharacterList = Object.values(json.RecentCharacterList).map(x=> MirrorDungeonGetCharacterInfoFormat.fromJSON(x))
+		return obj
+	}
+
+}
+
+class MirrorDungeonFormationFormat {
+	pervPersonalityId?: number;
+	nextPersonalityId?: number;
+	egos?: MirrorDungeonFormationEgoFormat[];
+	static fromJSON(json:any){
+		let obj = new MirrorDungeonFormationFormat()
+		obj.pervPersonalityId = json.pervPersonalityId
+		obj.nextPersonalityId = json.nextPersonalityId
+		obj.egos = Object.values(json.egos).map(x=> MirrorDungeonFormationEgoFormat.fromJSON(x))
+		return obj
+	}
+
+}
+
+class ResPacket_UpdateMirrorDungeonCommand {
+	saveInfo?: MirrorDungeonSaveInfoFormat;
+	SaveInfo?: MirrorDungeonSaveInfoFormat;
+	static fromJSON(json:any){
+		let obj = new ResPacket_UpdateMirrorDungeonCommand()
+		obj.saveInfo = MirrorDungeonSaveInfoFormat.fromJSON(json.saveInfo)
+		obj.SaveInfo = MirrorDungeonSaveInfoFormat.fromJSON(json.SaveInfo)
+		return obj
+	}
+
+}
+
+class ResPacket_GetMirrorDungeonLastReward {
+	rewardlist?: Element[];
+	saveInfo?: MirrorDungeonSaveInfoFormat;
+	chip?: number;
+	SaveInfo?: MirrorDungeonSaveInfoFormat;
+	Chip?: number;
+	static fromJSON(json:any){
+		let obj = new ResPacket_GetMirrorDungeonLastReward()
+		obj.rewardlist = Object.values(json.rewardlist).map(x=> Element.fromJSON(x))
+		obj.saveInfo = MirrorDungeonSaveInfoFormat.fromJSON(json.saveInfo)
+		obj.chip = json.chip
+		obj.SaveInfo = MirrorDungeonSaveInfoFormat.fromJSON(json.SaveInfo)
+		obj.Chip = json.Chip
+		return obj
+	}
+
+}
+
+class ResPacket_EnterMirrorDungeonMapNodeCommand {
+	abnormalityLogs?: AbnormalityUnlockInformationFormat[];
+	passingNodeIds?: number[];
+	currentNode?: DungeonMapNodeFormat;
+	shopInfo?: UserMirrorDungeonShopDataFormat;
+	egogifts?: DungeonMapEgoGiftFormat[];
+	prevdul?: MirrorDungeonPrevUnitInfoFormat[];
+	preves?: number[];
+	AbnormalityLogs?: AbnormalityUnlockInformationFormat[];
+	PassingNodeIds?: number[];
+	CurrentNode?: DungeonMapNodeFormat;
+	ShopInfo?: UserMirrorDungeonShopDataFormat;
+	Egogifts?: DungeonMapEgoGiftFormat[];
+	PrevDul?: MirrorDungeonPrevUnitInfoFormat[];
+	PrevEgos?: number[];
+	static fromJSON(json:any){
+		let obj = new ResPacket_EnterMirrorDungeonMapNodeCommand()
+		obj.abnormalityLogs = Object.values(json.abnormalityLogs).map(x=> AbnormalityUnlockInformationFormat.fromJSON(x))
+		obj.passingNodeIds = json.passingNodeIds
+		obj.currentNode = DungeonMapNodeFormat.fromJSON(json.currentNode)
+		obj.shopInfo = UserMirrorDungeonShopDataFormat.fromJSON(json.shopInfo)
+		obj.egogifts = Object.values(json.egogifts).map(x=> DungeonMapEgoGiftFormat.fromJSON(x))
+		obj.prevdul = Object.values(json.prevdul).map(x=> MirrorDungeonPrevUnitInfoFormat.fromJSON(x))
+		obj.preves = json.preves
+		obj.AbnormalityLogs = Object.values(json.AbnormalityLogs).map(x=> AbnormalityUnlockInformationFormat.fromJSON(x))
+		obj.PassingNodeIds = json.PassingNodeIds
+		obj.CurrentNode = DungeonMapNodeFormat.fromJSON(json.CurrentNode)
+		obj.ShopInfo = UserMirrorDungeonShopDataFormat.fromJSON(json.ShopInfo)
+		obj.Egogifts = Object.values(json.Egogifts).map(x=> DungeonMapEgoGiftFormat.fromJSON(x))
+		obj.PrevDul = Object.values(json.PrevDul).map(x=> MirrorDungeonPrevUnitInfoFormat.fromJSON(x))
+		obj.PrevEgos = json.PrevEgos
+		return obj
+	}
+
+}
+
+class ResPacket_EnterMirrordungeonMapNodeBattleAfterChoice {
+	abnormalityLogs?: AbnormalityUnlockInformationFormat[];
+	AbnormalityLogs?: AbnormalityUnlockInformationFormat[];
+	static fromJSON(json:any){
+		let obj = new ResPacket_EnterMirrordungeonMapNodeBattleAfterChoice()
+		obj.abnormalityLogs = Object.values(json.abnormalityLogs).map(x=> AbnormalityUnlockInformationFormat.fromJSON(x))
+		obj.AbnormalityLogs = Object.values(json.AbnormalityLogs).map(x=> AbnormalityUnlockInformationFormat.fromJSON(x))
+		return obj
+	}
+
+}
+
+class ReqPacket_ExitMirrorDungeonMapNodeCommand {
+	currentnode?: DungeonMapNodeFormat;
+	dungeonunitlist?: MirrorDungeonSaveUnitInfoFormat[];
+	noderesult?: number;
+	choiceEventData?: DungeonChoiceEventSaveDataFormat;
+	battlePassParameters?: BattlePassParameterFormat;
+	abnormalityLogs?: AbnormalityUnlockInformationFormat[];
+	isupdatedEgoSkillStock?: number;
+	egoSkillStockList?: DungeonEgoSkillStockFormat[];
+	updatedEgoGifts?: DungeonMapEgoGiftFormat[];
+	statistics?: DungeonStatisticsDataFormat[];
+	static fromJSON(json:any){
+		let obj = new ReqPacket_ExitMirrorDungeonMapNodeCommand()
+		obj.currentnode = DungeonMapNodeFormat.fromJSON(json.currentnode)
+		obj.dungeonunitlist = Object.values(json.dungeonunitlist).map(x=> MirrorDungeonSaveUnitInfoFormat.fromJSON(x))
+		obj.noderesult = json.noderesult
+		obj.choiceEventData = DungeonChoiceEventSaveDataFormat.fromJSON(json.choiceEventData)
+		obj.battlePassParameters = BattlePassParameterFormat.fromJSON(json.battlePassParameters)
+		obj.abnormalityLogs = Object.values(json.abnormalityLogs).map(x=> AbnormalityUnlockInformationFormat.fromJSON(x))
+		obj.isupdatedEgoSkillStock = json.isupdatedEgoSkillStock
+		obj.egoSkillStockList = Object.values(json.egoSkillStockList).map(x=> DungeonEgoSkillStockFormat.fromJSON(x))
+		obj.updatedEgoGifts = Object.values(json.updatedEgoGifts).map(x=> DungeonMapEgoGiftFormat.fromJSON(x))
+		obj.statistics = Object.values(json.statistics).map(x=> DungeonStatisticsDataFormat.fromJSON(x))
+		return obj
+	}
+
+}
+
+class ResPacket_ExitMirrorDungeonMapNodeCommand {
+	currentInfo?: MirrorDungeonCurrentInfoFormat;
+	abnormalityLogs?: AbnormalityUnlockInformationFormat[];
+	CurrentInfo?: MirrorDungeonCurrentInfoFormat;
+	AbnormalityLogs?: AbnormalityUnlockInformationFormat[];
+	static fromJSON(json:any){
+		let obj = new ResPacket_ExitMirrorDungeonMapNodeCommand()
+		obj.currentInfo = MirrorDungeonCurrentInfoFormat.fromJSON(json.currentInfo)
+		obj.abnormalityLogs = Object.values(json.abnormalityLogs).map(x=> AbnormalityUnlockInformationFormat.fromJSON(x))
+		obj.CurrentInfo = MirrorDungeonCurrentInfoFormat.fromJSON(json.CurrentInfo)
+		obj.AbnormalityLogs = Object.values(json.AbnormalityLogs).map(x=> AbnormalityUnlockInformationFormat.fromJSON(x))
+		return obj
+	}
+
+}
+
+class ReqPacket_PurchaseFormation {
+	formation?: MirrorDungeonFormationFormat[];
+	static fromJSON(json:any){
+		let obj = new ReqPacket_PurchaseFormation()
+		obj.formation = Object.values(json.formation).map(x=> MirrorDungeonFormationFormat.fromJSON(x))
+		return obj
+	}
+
+}
+
+class ResPacket_GetMirrorDungeonPreset {
+	recentCharacterList?: MirrorDungeonFormationFormat[];
+	RecentCharacterList?: MirrorDungeonFormationFormat[];
+	static fromJSON(json:any){
+		let obj = new ResPacket_GetMirrorDungeonPreset()
+		obj.recentCharacterList = Object.values(json.recentCharacterList).map(x=> MirrorDungeonFormationFormat.fromJSON(x))
+		obj.RecentCharacterList = Object.values(json.RecentCharacterList).map(x=> MirrorDungeonFormationFormat.fromJSON(x))
+		return obj
+	}
+
+}
+
+class ResPacket_SelectMirrorDungeonRandomPickFormation {
+	formation?: MirrorDungeonFormationFormat[];
+	Formation?: MirrorDungeonFormationFormat[];
+	static fromJSON(json:any){
+		let obj = new ResPacket_SelectMirrorDungeonRandomPickFormation()
+		obj.formation = Object.values(json.formation).map(x=> MirrorDungeonFormationFormat.fromJSON(x))
+		obj.Formation = Object.values(json.Formation).map(x=> MirrorDungeonFormationFormat.fromJSON(x))
+		return obj
+	}
+
+}
+
+class FormationFormat {
+	id?: number;
+	formationDetails?: FormationDetailFormat[];
+	static fromJSON(json:any){
+		let obj = new FormationFormat()
+		obj.id = json.id
+		obj.formationDetails = Object.values(json.formationDetails).map(x=> FormationDetailFormat.fromJSON(x))
+		return obj
+	}
+
+}
+
+class ReqPacket_UpdateFormationCommand {
+	formation?: FormationFormat;
+	static fromJSON(json:any){
+		let obj = new ReqPacket_UpdateFormationCommand()
+		obj.formation = FormationFormat.fromJSON(json.formation)
+		return obj
+	}
+
+}
+
+class ResPacket_GetFriendsData {
+	friendprofileList?: UserPublicProfileFormat[];
+	sendprofileList?: UserPublicProfileFormat[];
+	receiveprofileList?: UserPublicProfileFormat[];
+	static fromJSON(json:any){
+		let obj = new ResPacket_GetFriendsData()
+		obj.friendprofileList = Object.values(json.friendprofileList).map(x=> UserPublicProfileFormat.fromJSON(x))
+		obj.sendprofileList = Object.values(json.sendprofileList).map(x=> UserPublicProfileFormat.fromJSON(x))
+		obj.receiveprofileList = Object.values(json.receiveprofileList).map(x=> UserPublicProfileFormat.fromJSON(x))
+		return obj
+	}
+
+}
+
+class SupportPersonalityFormat {
+	pid?: number;
+	l?: number;
+	egos?: ProfileEgoContainIndexFormat[];
+	gl?: number;
+	gi?: number;
+	static fromJSON(json:any){
+		let obj = new SupportPersonalityFormat()
+		obj.pid = json.pid
+		obj.l = json.l
+		obj.egos = Object.values(json.egos).map(x=> ProfileEgoContainIndexFormat.fromJSON(x))
+		obj.gl = json.gl
+		obj.gi = json.gi
+		return obj
+	}
+
+}
+
+class ReqPacket_EnterRailwayDungeon {
+	dungeonId?: number;
+	personalities?: RailwayUnitInfoFormat[];
+	static fromJSON(json:any){
+		let obj = new ReqPacket_EnterRailwayDungeon()
+		obj.dungeonId = json.dungeonId
+		obj.personalities = Object.values(json.personalities).map(x=> RailwayUnitInfoFormat.fromJSON(x))
+		return obj
+	}
+
+}
+
+class ResPacket_EnterRailwayDungeon {
+	saveInfo?: RailwayDungeonSaveInfoFormat;
+	SaveInfo?: RailwayDungeonSaveInfoFormat;
+	static fromJSON(json:any){
+		let obj = new ResPacket_EnterRailwayDungeon()
+		obj.saveInfo = RailwayDungeonSaveInfoFormat.fromJSON(json.saveInfo)
+		obj.SaveInfo = RailwayDungeonSaveInfoFormat.fromJSON(json.SaveInfo)
+		return obj
+	}
+
+}
+
+class ResPacket_EnterRailwayDungeonMapNodeCommand {
+	nodeid?: number;
+	deletedNodeIds?: number[];
+	abnormalityLogs?: AbnormalityUnlockInformationFormat[];
+	prevStatusData?: RailwayUnitStatusFormat[];
+	prevEgoStockData?: RailwayEGOStockFormat[];
+	NodeId?: number;
+	NewCurrentClearNodeId?: number;
+	DeletedNodeIds?: number[];
+	AbnormalityLogs?: AbnormalityUnlockInformationFormat[];
+	PrevStatusData?: RailwayUnitStatusFormat[];
+	PrevEgoStockData?: RailwayEGOStockFormat[];
+	static fromJSON(json:any){
+		let obj = new ResPacket_EnterRailwayDungeonMapNodeCommand()
+		obj.nodeid = json.nodeid
+		obj.deletedNodeIds = json.deletedNodeIds
+		obj.abnormalityLogs = Object.values(json.abnormalityLogs).map(x=> AbnormalityUnlockInformationFormat.fromJSON(x))
+		obj.prevStatusData = Object.values(json.prevStatusData).map(x=> RailwayUnitStatusFormat.fromJSON(x))
+		obj.prevEgoStockData = Object.values(json.prevEgoStockData).map(x=> RailwayEGOStockFormat.fromJSON(x))
+		obj.NodeId = json.NodeId
+		obj.NewCurrentClearNodeId = json.NewCurrentClearNodeId
+		obj.DeletedNodeIds = json.DeletedNodeIds
+		obj.AbnormalityLogs = Object.values(json.AbnormalityLogs).map(x=> AbnormalityUnlockInformationFormat.fromJSON(x))
+		obj.PrevStatusData = Object.values(json.PrevStatusData).map(x=> RailwayUnitStatusFormat.fromJSON(x))
+		obj.PrevEgoStockData = Object.values(json.PrevEgoStockData).map(x=> RailwayEGOStockFormat.fromJSON(x))
+		return obj
+	}
+
+}
+
+class RailwayLogDataFormat {
+	idx?: number;
+	personalities?: RailwayUnitInfoFormat[];
+	statistics?: RailwayStatisticsDataFormat[];
+	clearturn?: number;
+	turnspernode?: RailwayTurnsPerNode[];
+	date?: string;
+	deadunitnumber?: number;
+	static fromJSON(json:any){
+		let obj = new RailwayLogDataFormat()
+		obj.idx = json.idx
+		obj.personalities = Object.values(json.personalities).map(x=> RailwayUnitInfoFormat.fromJSON(x))
+		obj.statistics = Object.values(json.statistics).map(x=> RailwayStatisticsDataFormat.fromJSON(x))
+		obj.clearturn = json.clearturn
+		obj.turnspernode = Object.values(json.turnspernode).map(x=> RailwayTurnsPerNode.fromJSON(x))
+		obj.date = json.date
+		obj.deadunitnumber = json.deadunitnumber
+		return obj
+	}
+
+}
+
+class ReqPacket_ExitRailwayDungeonMapNodeCommand {
+	dungeonId?: number;
+	nodeid?: number;
+	unitStatusList?: RailwayUnitStatusFormat[];
+	egoSkillStockList?: RailwayEGOStockFormat[];
+	battlePassParameters?: BattlePassParameterFormat;
+	abnormalityLogs?: AbnormalityUnlockInformationFormat[];
+	statistics?: RailwayStatisticsDataFormat[];
+	clearTurn?: number;
+	static fromJSON(json:any){
+		let obj = new ReqPacket_ExitRailwayDungeonMapNodeCommand()
+		obj.dungeonId = json.dungeonId
+		obj.nodeid = json.nodeid
+		obj.unitStatusList = Object.values(json.unitStatusList).map(x=> RailwayUnitStatusFormat.fromJSON(x))
+		obj.egoSkillStockList = Object.values(json.egoSkillStockList).map(x=> RailwayEGOStockFormat.fromJSON(x))
+		obj.battlePassParameters = BattlePassParameterFormat.fromJSON(json.battlePassParameters)
+		obj.abnormalityLogs = Object.values(json.abnormalityLogs).map(x=> AbnormalityUnlockInformationFormat.fromJSON(x))
+		obj.statistics = Object.values(json.statistics).map(x=> RailwayStatisticsDataFormat.fromJSON(x))
+		obj.clearTurn = json.clearTurn
+		return obj
+	}
+
+}
+
+class ResPacket_ExitRailwayDungeonMapNodeCommand {
+	saveInfo?: RailwayDungeonSaveInfoFormat;
+	abnormalityLogs?: AbnormalityUnlockInformationFormat[];
+	nodeData?: RailwayNodeDataFormat;
+	SaveInfo?: RailwayDungeonSaveInfoFormat;
+	AbnormalityLogs?: AbnormalityUnlockInformationFormat[];
+	NodeData?: RailwayNodeDataFormat;
+	static fromJSON(json:any){
+		let obj = new ResPacket_ExitRailwayDungeonMapNodeCommand()
+		obj.saveInfo = RailwayDungeonSaveInfoFormat.fromJSON(json.saveInfo)
+		obj.abnormalityLogs = Object.values(json.abnormalityLogs).map(x=> AbnormalityUnlockInformationFormat.fromJSON(x))
+		obj.nodeData = RailwayNodeDataFormat.fromJSON(json.nodeData)
+		obj.SaveInfo = RailwayDungeonSaveInfoFormat.fromJSON(json.SaveInfo)
+		obj.AbnormalityLogs = Object.values(json.AbnormalityLogs).map(x=> AbnormalityUnlockInformationFormat.fromJSON(x))
+		obj.NodeData = RailwayNodeDataFormat.fromJSON(json.NodeData)
+		return obj
+	}
+
+}
+
+class ResPacket_ExitRailwayDungeonCommand {
+	isclear?: boolean;
+	saveInfo?: RailwayDungeonSaveInfoFormat;
+	currentLog?: RailwayLogDataFormat;
+	rewards?: Element[];
+	IsClear?: boolean;
+	SaveInfo?: RailwayDungeonSaveInfoFormat;
+	CurrentLog?: RailwayLogDataFormat;
+	Rewards?: Element[];
+	static fromJSON(json:any){
+		let obj = new ResPacket_ExitRailwayDungeonCommand()
+		obj.isclear = json.isclear
+		obj.saveInfo = RailwayDungeonSaveInfoFormat.fromJSON(json.saveInfo)
+		obj.currentLog = RailwayLogDataFormat.fromJSON(json.currentLog)
+		obj.rewards = Object.values(json.rewards).map(x=> Element.fromJSON(x))
+		obj.IsClear = json.IsClear
+		obj.SaveInfo = RailwayDungeonSaveInfoFormat.fromJSON(json.SaveInfo)
+		obj.CurrentLog = RailwayLogDataFormat.fromJSON(json.CurrentLog)
+		obj.Rewards = Object.values(json.Rewards).map(x=> Element.fromJSON(x))
+		return obj
+	}
+
+}
+
+class ResPacket_AcquireRailwayDungeonReward {
+	saveInfo?: RailwayDungeonSaveInfoFormat;
+	rewardList?: Element[];
+	SaveInfo?: RailwayDungeonSaveInfoFormat;
+	RewardList?: Element[];
+	static fromJSON(json:any){
+		let obj = new ResPacket_AcquireRailwayDungeonReward()
+		obj.saveInfo = RailwayDungeonSaveInfoFormat.fromJSON(json.saveInfo)
+		obj.rewardList = Object.values(json.rewardList).map(x=> Element.fromJSON(x))
+		obj.SaveInfo = RailwayDungeonSaveInfoFormat.fromJSON(json.SaveInfo)
+		obj.RewardList = Object.values(json.RewardList).map(x=> Element.fromJSON(x))
+		return obj
+	}
+
+}
+
+class HellsChickenDungeonSaveInfoFormat {
+	dungeonid?: number;
+	currentinfo?: HellsChickenDungeonCurrentInfoFormat;
+	map?: RandomDungeonMapFormat;
+	choiceeventlist?: number[];
+	statistics?: DungeonStatisticsDataFormat[];
+	static fromJSON(json:any){
+		let obj = new HellsChickenDungeonSaveInfoFormat()
+		obj.dungeonid = json.dungeonid
+		obj.currentinfo = HellsChickenDungeonCurrentInfoFormat.fromJSON(json.currentinfo)
+		obj.map = RandomDungeonMapFormat.fromJSON(json.map)
+		obj.choiceeventlist = json.choiceeventlist
+		obj.statistics = Object.values(json.statistics).map(x=> DungeonStatisticsDataFormat.fromJSON(x))
+		return obj
+	}
+
+}
+
+class ResPacket_EnterHellsChickenDungeonCommand {
+	saveInfo?: HellsChickenDungeonSaveInfoFormat;
+	recentCharacterList?: HellsChickenDungeonGetCharacterInfoFormat[];
+	SaveInfo?: HellsChickenDungeonSaveInfoFormat;
+	RecentCharacterList?: HellsChickenDungeonGetCharacterInfoFormat[];
+	static fromJSON(json:any){
+		let obj = new ResPacket_EnterHellsChickenDungeonCommand()
+		obj.saveInfo = HellsChickenDungeonSaveInfoFormat.fromJSON(json.saveInfo)
+		obj.recentCharacterList = Object.values(json.recentCharacterList).map(x=> HellsChickenDungeonGetCharacterInfoFormat.fromJSON(x))
+		obj.SaveInfo = HellsChickenDungeonSaveInfoFormat.fromJSON(json.SaveInfo)
+		obj.RecentCharacterList = Object.values(json.RecentCharacterList).map(x=> HellsChickenDungeonGetCharacterInfoFormat.fromJSON(x))
+		return obj
+	}
+
+}
+
+class ResPacket_ReEnterHellsChickenDungeon {
+	saveInfo?: HellsChickenDungeonSaveInfoFormat;
+	recentCharacterList?: HellsChickenDungeonGetCharacterInfoFormat[];
+	SaveInfo?: HellsChickenDungeonSaveInfoFormat;
+	RecentCharacterList?: HellsChickenDungeonGetCharacterInfoFormat[];
+	static fromJSON(json:any){
+		let obj = new ResPacket_ReEnterHellsChickenDungeon()
+		obj.saveInfo = HellsChickenDungeonSaveInfoFormat.fromJSON(json.saveInfo)
+		obj.recentCharacterList = Object.values(json.recentCharacterList).map(x=> HellsChickenDungeonGetCharacterInfoFormat.fromJSON(x))
+		obj.SaveInfo = HellsChickenDungeonSaveInfoFormat.fromJSON(json.SaveInfo)
+		obj.RecentCharacterList = Object.values(json.RecentCharacterList).map(x=> HellsChickenDungeonGetCharacterInfoFormat.fromJSON(x))
+		return obj
+	}
+
+}
+
+class ResPacket_UpdateHellsChickenDungeonCommand {
+	saveInfo?: HellsChickenDungeonSaveInfoFormat;
+	SaveInfo?: HellsChickenDungeonSaveInfoFormat;
+	static fromJSON(json:any){
+		let obj = new ResPacket_UpdateHellsChickenDungeonCommand()
+		obj.saveInfo = HellsChickenDungeonSaveInfoFormat.fromJSON(json.saveInfo)
+		obj.SaveInfo = HellsChickenDungeonSaveInfoFormat.fromJSON(json.SaveInfo)
+		return obj
+	}
+
+}
+
+class ResPacket_ExitHellsChickenDungeonCommand {
+	saveInfo?: HellsChickenDungeonSaveInfoFormat;
+	iswin?: boolean;
+	statistics?: DungeonStatisticsDataFormat[];
+	cleartype?: number;
+	adduserexp?: number;
+	personalityinfos?: StagePersonalityInfoFormat[];
+	normalrewards?: Element[];
+	exrewards?: Element[];
+	expticket?: Element[];
+	givebackstaminabyDefeat?: Element;
+	IsWin?: boolean;
+	Statistics?: DungeonStatisticsDataFormat[];
+	static fromJSON(json:any){
+		let obj = new ResPacket_ExitHellsChickenDungeonCommand()
+		obj.saveInfo = HellsChickenDungeonSaveInfoFormat.fromJSON(json.saveInfo)
+		obj.iswin = json.iswin
+		obj.statistics = Object.values(json.statistics).map(x=> DungeonStatisticsDataFormat.fromJSON(x))
+		obj.cleartype = json.cleartype
+		obj.adduserexp = json.adduserexp
+		obj.personalityinfos = Object.values(json.personalityinfos).map(x=> StagePersonalityInfoFormat.fromJSON(x))
+		obj.normalrewards = Object.values(json.normalrewards).map(x=> Element.fromJSON(x))
+		obj.exrewards = Object.values(json.exrewards).map(x=> Element.fromJSON(x))
+		obj.expticket = Object.values(json.expticket).map(x=> Element.fromJSON(x))
+		obj.givebackstaminabyDefeat = Element.fromJSON(json.givebackstaminabyDefeat)
+		obj.IsWin = json.IsWin
+		obj.Statistics = Object.values(json.Statistics).map(x=> DungeonStatisticsDataFormat.fromJSON(x))
+		return obj
+	}
+
+}
+
+class ResPacket_EnterHellsChickenDungeonMapNodeCommand {
+	abnormalityLogs?: AbnormalityUnlockInformationFormat[];
+	passingNodeIds?: number[];
+	currentNode?: DungeonMapNodeFormat;
+	AbnormalityLogs?: AbnormalityUnlockInformationFormat[];
+	PassingNodeIds?: number[];
+	CurrentNode?: DungeonMapNodeFormat;
+	static fromJSON(json:any){
+		let obj = new ResPacket_EnterHellsChickenDungeonMapNodeCommand()
+		obj.abnormalityLogs = Object.values(json.abnormalityLogs).map(x=> AbnormalityUnlockInformationFormat.fromJSON(x))
+		obj.passingNodeIds = json.passingNodeIds
+		obj.currentNode = DungeonMapNodeFormat.fromJSON(json.currentNode)
+		obj.AbnormalityLogs = Object.values(json.AbnormalityLogs).map(x=> AbnormalityUnlockInformationFormat.fromJSON(x))
+		obj.PassingNodeIds = json.PassingNodeIds
+		obj.CurrentNode = DungeonMapNodeFormat.fromJSON(json.CurrentNode)
+		return obj
+	}
+
+}
+
+class ResPacket_GetDungeonSaveInfoAll {
+	storySaveInfo?: StoryDungeonSaveInfoFormat;
+	mirrorOriginSaveInfo?: MirrorDungeonSaveInfoFormat;
+	railwaySaveInfo?: RailwayDungeonSaveInfoFormat;
+	hellschickenSaveInfo?: HellsChickenDungeonSaveInfoFormat;
+	mirrorDungeonClearInfos?: MirrorDungeonClearInfoFormat[];
+	static fromJSON(json:any){
+		let obj = new ResPacket_GetDungeonSaveInfoAll()
+		obj.storySaveInfo = StoryDungeonSaveInfoFormat.fromJSON(json.storySaveInfo)
+		obj.mirrorOriginSaveInfo = MirrorDungeonSaveInfoFormat.fromJSON(json.mirrorOriginSaveInfo)
+		obj.railwaySaveInfo = RailwayDungeonSaveInfoFormat.fromJSON(json.railwaySaveInfo)
+		obj.hellschickenSaveInfo = HellsChickenDungeonSaveInfoFormat.fromJSON(json.hellschickenSaveInfo)
+		obj.mirrorDungeonClearInfos = Object.values(json.mirrorDungeonClearInfos).map(x=> MirrorDungeonClearInfoFormat.fromJSON(x))
+		return obj
+	}
+
+}
+
+class ReqPacket_UpdateMirrorDungeonCommand {
+	characterInfos?: MirrorDungeonGetCharacterInfoFormat[];
+	formation?: MirrorDungeonFormationFormat[];
+	map?: RandomDungeonMapFormat;
+	choiceEventList?: number[];
+	isRandomPick?: number;
+	static fromJSON(json:any){
+		let obj = new ReqPacket_UpdateMirrorDungeonCommand()
+		obj.characterInfos = Object.values(json.characterInfos).map(x=> MirrorDungeonGetCharacterInfoFormat.fromJSON(x))
+		obj.formation = Object.values(json.formation).map(x=> MirrorDungeonFormationFormat.fromJSON(x))
+		obj.map = RandomDungeonMapFormat.fromJSON(json.map)
+		obj.choiceEventList = json.choiceEventList
+		obj.isRandomPick = json.isRandomPick
+		return obj
+	}
+
+}
+
+class ResPacket_GetFriendSupportPersonalitiesByCharacterId {
+	supportpersonalities?: SupportPersonalityFormat[];
+	static fromJSON(json:any){
+		let obj = new ResPacket_GetFriendSupportPersonalitiesByCharacterId()
+		obj.supportpersonalities = Object.values(json.supportpersonalities).map(x=> SupportPersonalityFormat.fromJSON(x))
+		return obj
+	}
+
+}
+
+class ResPacket_GetRailwayDungeonNodeAndLogAllCommand {
+	nodeDatas?: RailwayNodeDataFormat[];
+	logDatas?: RailwayLogDataFormat[];
+	static fromJSON(json:any){
+		let obj = new ResPacket_GetRailwayDungeonNodeAndLogAllCommand()
+		obj.nodeDatas = Object.values(json.nodeDatas).map(x=> RailwayNodeDataFormat.fromJSON(x))
+		obj.logDatas = Object.values(json.logDatas).map(x=> RailwayLogDataFormat.fromJSON(x))
+		return obj
+	}
+
+}
+

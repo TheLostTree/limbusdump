@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "E/XFA9Kiz0ry9Ct8Sx+KOVnY8zN1wnLlUFxAMzJR2fAga6d2on6Vd9M019CxdsI/1QODej4IYd+LlcVC6rb2kg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\admin\\Documents\\Github\\LimbusDump\\LimbusDump\\LimbusDump.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\admin\\.nuget\\packages\\mono.cecil\\0.11.5\\mono.cecil.0.11.5.nupkg.sha512"
+  ],
+  "logs": []
+}
